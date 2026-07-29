@@ -1,0 +1,13 @@
+
+
+ /* axpapi varible yadan aburay colors inaysan idin qancanin macquul kan tusale cml waaye 
+markad isticmaleyso sidan u isticmalee
+background-color: var(--main-background-color); */
+:root{
+    --main-background-color: #fff9f0;
+    --secondary-background-color: #1f3a6e;
+    --button-background-color: #FFb627;
+    --text-color-1: #1f3a6e;
+    --text-color-2: #fff9f0;
+    --footer-background-color: #142850;
+}
