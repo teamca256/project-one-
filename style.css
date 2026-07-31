@@ -1,13 +1,26 @@
-
-
- /* axpapi varible yadan aburay colors inaysan idin qancanin macquul kan tusale cml waaye 
+/* axpapi varible yadan aburay colors inaysan idin qancanin macquul kan tusale cml waaye 
 markad isticmaleyso sidan u isticmalee
 background-color: var(--main-background-color); */
-:root{
-    --main-background-color: #fff9f0;
-    --secondary-background-color: #1f3a6e;
-    --button-background-color: #FFb627;
-    --text-color-1: #1f3a6e;
-    --text-color-2: #fff9f0;
-    --footer-background-color: #142850;
+:root {
+  --main-background-color: #fff9f0;
+  --secondary-background-color: #1f3a6e;
+  --button-background-color: #ffb627;
+  --text-color-1: #1f3a6e;
+  --text-color-2: #fff9f0;
+  --footer-background-color: #142850;
+
+
 }
+/* sida ay ukala horeeyan usoo gale marka css qoreysid adiga xogta qeybaha kala u gudbeynin*/
+/* qeybtan universal selector*/
+/* qeybtan body*/
+/*qeybtah headers*/
+/*qeybtan nav*/
+/*qeybtan home*/
+/*qeybtan  About us*/
+/*qeybtan Academics*/
+/*qeybtan admisions*/
+
+/*qeybtan contacts*/
+
+/* qeybta footrs*/
