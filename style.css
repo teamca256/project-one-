@@ -11,258 +11,401 @@ background-color: var(--main-background-color); */
   --font-family-headings: "Cinzel", serif;
   --font-family-sub-headings: "Poppins", sans-serif;
   --font-family-paragraphs: "Inter", sans-serif;
+  --secondary-background-rgb: 31, 58, 110;
+  --button-background-rgb: 255, 182, 39;
 }
 /* sida ay ukala horeeyan usoo gale marka css qoreysid adiga xogta qeybaha kala u gudbeynin*/
 /* qeybtan universal selector*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 /* qeybtan body*/
 /*qeybtah headers*/
 /*qeybtan nav*/
 /*qeybtan home*/
 /*qeybtan  About us*/
+.about-us {
+  margin: 20px auto;
+  width: 100%;
+}
+.about-title {
+  background: linear-gradient(
+    90deg,
+    rgba(var(--secondary-background-rgb), 0.9),
+    rgba(var(--button-background-rgb), 0.8)
+  );
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  color: var(--text-color-2);
+  padding: 10px;
+  font-family: var(--font-family-headings);
+}
+
+.sub-title {
+  font-family: var(--font-family-sub-headings);
+  font-size: 1.5rem;
+  color: var(--text-color-1);
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  padding: 20px;
+}
+.about-image {
+  width: 100%;
+  max-width: 440px;
+  height: auto;
+  border-radius: 10px;
+  margin: 20px auto;
+  float: right;
+}
+.text-paragphy {
+  margin: 0 30px;
+  font-size: 1.1rem;
+  font-family: var(--font-family-paragraphs);
+  text-align: left;
+}
+
+.about-container {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  margin: 70px auto 20px;
+  width: 90%;
+  cursor: pointer;
+}
+.about-container i {
+  font-size: 40px;
+  color: var(--button-background-color);
+  margin-bottom: 15px;
+}
+.sub-title-vissions,
+.sub-title-missions,
+.sub-title-core {
+  text-align: center;
+  font-size: 1, 5rem;
+  color: var(--text-color-2);
+  margin: 20px;
+}
+.about-vision,
+.about-mision,
+.Core-Values {
+  background-color: var(--secondary-background-color);
+  box-shadow: 4px 10px 12px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 10px;
+  color: var(--text-color-2);
+  width: 300px;
+  height: 300px;
+}
+.mision-list {
+  list-style-type: square;
+}
+.core-valus-list {
+  list-style-type: circle;
+}
+.title-facts {
+  font-family: var(--font-family-headings);
+  color: var(--text-color-1);
+  text-align: center;
+  display: inline;
+}
+
+.about-facts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 30px;
+  padding: 20px;
+  margin: 0;
+}
+
+.fact-card {
+  width: 350px;
+  background: var(--main-background-color);
+  padding: 25px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+
+.fact-card:hover {
+  transform: translateY(-6px);
+}
+
+.fact-icon {
+  width: 80px;
+  height: 80px;
+  background: var(--secondary-background-color);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fact-card:nth-child(odd) .fact-icon {
+  background: var(--button-background-color);
+}
+
+.fact-icon i {
+  color: var(--text-color-2);
+  font-size: 38px;
+}
+
+.fact-info h3 {
+  color: var(--text-color-1);
+  font-size: 2rem;
+  margin-bottom: 8px;
+  font-family: var(--font-family-headings);
+}
+
+.fact-info p {
+  color: var(--secondary-background-color);
+  font-size: 1rem;
+  font-family: var(--font-family-paragraphs);
+}
 /*qeybtan Academics*/
-  .title-of-fuculty{
-    text-align: center;
-    font-weight: bold;
-    font-size: 2.3rem;
-    font-family: 'Cinzel', serif;
-   background: linear-gradient(to right, #1f3a6e,#FFb627);
-    padding: 40px;  
-    color:#fff9f0 ;  
+.title-of-fuculty {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.3rem;
+  font-family: "Cinzel", serif;
+  background: linear-gradient(to right, #1f3a6e, #ffb627);
+  padding: 40px;
+  color: #fff9f0;
 }
-.name-of-department-technology{
-      text-align: center;
-    font-weight: bold;
-    font-size: 1.8rem;
-    font-family: 'Poppins', sans-serif;
-     margin-top: 40px;
-     ;
-    
-    color: #253657;
-}
-.fc-information-tech-container{
-    display: flex;
-    gap: 15px;
-    justify-content: space-around;
-    margin:30px ;
-    gap: 30px;
-}
-
-
-.image-of-departmen-technology{
-    width: 450px;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0px 2px 6px #FFb627;
-    border: none;
-}
-.explore-of-departmen-technology{
-     font-family: 'Inter', sans-serif;
-     font-size: 1.1rem;
-     color: rgb(42, 40, 40);
-     margin-top: 50px;
-     line-height: 1.6;
-     letter-spacing: 1px;
-}
-.What-We-Teach-heading{
-     text-align: center;
-    font-weight: bold;
-    font-size: 1.8rem;
-    font-family: 'Poppins', sans-serif;
-    padding: 40px;  
-     color: #253657;
-}
-.What-We-Teach-container{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 30px;
-    width: 60%;
-    margin: 0 auto;
-   
-
-}
-
-
-.What-We-Teach-card{
-    background-color: #1f3a6e;
-    padding: 30px 20px;
-    text-align: center;
-    margin-top: 14px;
-    color: #FFb627;
-      text-align: center;
-    font-weight: bold;
-    font-size: 1.2rem;
-    font-family: 'Poppins', sans-serif;
-    border-radius: 12px;
-      box-shadow: black 1px 3px 7px;
-     transition: transform 1s,background-color 1s,color 1s, boder 1s, box-shadow 1s, ease;
-
-
-}
-.What-We-Teach-card:hover{
-    transform: scale(1);
-    background-color: #FFb627;
-    color: #142850;
-    border: solid #253657 2px;
-    box-shadow: black 3px 3px 9px;
-}
-.Our-Mission{
-    
-    padding: 30px 20px;
-  
-  
-}
-
-.Our-Mission-title{
-     text-align:center ;
-    font-weight: bold;
-    font-size: 1.8rem;
-    font-family: 'Poppins', sans-serif;
-    margin-top: 19px;
-    color: #253657;
-    margin:30px;
-}
-.Our-Mission-pragrph{
-     font-family: 'Inter', sans-serif;
-     font-size: 1.1rem;
-     color: rgb(42, 40, 40);
-     line-height: 1.6;
-     letter-spacing: 1px;
-     margin-top: 4px;
-     text-align: left;
-}
-.Our-Vision{
-    
-    padding: 30px 20px;
-  
-
-}
-
-.Our-Vision-title{
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.8rem;
-    font-family: 'Poppins', sans-serif;
-    margin-top: 40px;
-   
+.name-of-department-technology {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  margin-top: 40px;
   color: #253657;
 }
-.Our-Vision-pragrph{
-    font-family: 'Inter', sans-serif;
-     font-size: 1.1rem;
-     color: rgb(42, 40, 40);
-     line-height: 1.6;
-   text-align: left;
-     letter-spacing: 1px;
-    
-   
+.fc-information-tech-container {
+  display: flex;
+  gap: 15px;
+  justify-content: space-around;
+  margin: 30px;
+  gap: 30px;
 }
-.What-Students-Learn--container{
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
-}
-.What-Students-Learn-card{
 
- background-color: #FFb627;
-    padding: 40px 30px;
-    text-align: center;
-    margin-top: 14px;
-    color:#1f3a6e;
-      text-align: center;
-    font-weight: bold;
-    font-size: 1.2rem;
-    font-family: 'Poppins', sans-serif;
-    border-radius: 12px;
-      box-shadow: black 1px 3px 7px;
-     transition: transform 1s, boder 1s, box-shadow 1s, ease;
+.image-of-departmen-technology {
+  width: 450px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px #ffb627;
+  border: none;
+}
+.explore-of-departmen-technology {
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  color: rgb(42, 40, 40);
+  margin-top: 50px;
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
+.What-We-Teach-heading {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  padding: 40px;
+  color: #253657;
+}
+.What-We-Teach-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 60%;
+  margin: 0 auto;
+}
 
+.What-We-Teach-card {
+  background-color: #1f3a6e;
+  padding: 30px 20px;
+  text-align: center;
+  margin-top: 14px;
+  color: #ffb627;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  border-radius: 12px;
+  box-shadow: black 1px 3px 7px;
+  transition:
+    transform 1s,
+    background-color 1s,
+    color 1s,
+    boder 1s,
+    box-shadow 1s,
+    ease;
 }
-.What-Students-Learn-card:hover{
-    transform: scale(1);
+.What-We-Teach-card:hover {
+  transform: scale(1);
+  background-color: #ffb627;
+  color: #142850;
+  border: solid #253657 2px;
+  box-shadow: black 3px 3px 9px;
+}
+.Our-Mission {
+  padding: 30px 20px;
+}
 
+.Our-Mission-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  margin-top: 19px;
+  color: #253657;
+  margin: 30px;
+}
+.Our-Mission-pragrph {
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  color: rgb(42, 40, 40);
+  line-height: 1.6;
+  letter-spacing: 1px;
+  margin-top: 4px;
+  text-align: left;
+}
+.Our-Vision {
+  padding: 30px 20px;
+}
 
-    border: solid #142850 2px;
-    box-shadow: black 3px 3px 9px;
-}
-.What-We-Teach-containers{
-       display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 30px;
-    width: 60%;
-    margin: 0 auto;
-}
-.What-Students-Learn-cards{
-       background-color: #1f3a6e;
-    padding: 30px 20px;
-    text-align: center;
-    margin-top: 14px;
-    color: #FFb627;
-      text-align: center;
-    font-weight: bold;
-    font-size: 1.2rem;
-    font-family: 'Poppins', sans-serif;
-    border-radius: 12px;
-      box-shadow: #FFb627 1px 3px 7px;
-     transition: transform 1s, boder 1s,color 1s, box-shadow 1s, ease;
-}
-.What-Students-Learn-cards:hover{
-     transform: scale(1);
-     border: solid #142850 2px;
-    box-shadow: #253657 3px 3px 9px;
-    color: aliceblue;
-}
-.apply-now{
- background:
-        linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)),
-        url("https://i.pinimg.com/1200x/37/ab/6a/37ab6a8c9ba7184468fc9bd5ebb628a3.jpg");
+.Our-Vision-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  margin-top: 40px;
 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 40px 30px;
-    position: relative;
+  color: #253657;
 }
-.aplly-now-pragraph{
-    font-family: 'Inter', sans-serif;
-     font-size: 1.1rem;
-     color: rgb(184, 178, 178);
-     line-height: 1.6;
+.Our-Vision-pragrph {
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  color: rgb(42, 40, 40);
+  line-height: 1.6;
+  text-align: left;
+  letter-spacing: 1px;
+}
+.What-Students-Learn--container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.What-Students-Learn-card {
+  background-color: #ffb627;
+  padding: 40px 30px;
+  text-align: center;
+  margin-top: 14px;
+  color: #1f3a6e;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  border-radius: 12px;
+  box-shadow: black 1px 3px 7px;
+  transition:
+    transform 1s,
+    boder 1s,
+    box-shadow 1s,
+    ease;
+}
+.What-Students-Learn-card:hover {
+  transform: scale(1);
 
-     letter-spacing: 1px;
-     padding: 30px;
-    
+  border: solid #142850 2px;
+  box-shadow: black 3px 3px 9px;
 }
-.btn-aplyy-now{
-    background-color: #1f3a6e;
-    padding: 18px 20px;
-   border: #FFb627 1px solid;
-    margin-top: -20px;
-    margin-left: 30px;
-  
+.What-We-Teach-containers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 60%;
+  margin: 0 auto;
 }
- .apply-link{
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 1rem;
-     text-align: center;
- }
-.image-logo{
-    width: 150px;
-    height: 130px;
-    object-fit: cover;
-    border-radius: 10px;
-    position: absolute;
-    right: 20px;
-    bottom: 16px;
-    opacity: 0.5;
+.What-Students-Learn-cards {
+  background-color: #1f3a6e;
+  padding: 30px 20px;
+  text-align: center;
+  margin-top: 14px;
+  color: #ffb627;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  border-radius: 12px;
+  box-shadow: #ffb627 1px 3px 7px;
+  transition:
+    transform 1s,
+    boder 1s,
+    color 1s,
+    box-shadow 1s,
+    ease;
+}
+.What-Students-Learn-cards:hover {
+  transform: scale(1);
+  border: solid #142850 2px;
+  box-shadow: #253657 3px 3px 9px;
+  color: aliceblue;
+}
+.apply-now {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+    url("https://i.pinimg.com/1200x/37/ab/6a/37ab6a8c9ba7184468fc9bd5ebb628a3.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px 30px;
+  position: relative;
+}
+.aplly-now-pragraph {
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  color: rgb(184, 178, 178);
+  line-height: 1.6;
+
+  letter-spacing: 1px;
+  padding: 30px;
+}
+.btn-aplyy-now {
+  background-color: #1f3a6e;
+  padding: 18px 20px;
+  border: #ffb627 1px solid;
+  margin-top: -20px;
+  margin-left: 30px;
+}
+.apply-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+}
+.image-logo {
+  width: 150px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 10px;
+  position: absolute;
+  right: 20px;
+  bottom: 16px;
+  opacity: 0.5;
 }
 /*qeybtan admisions*/
 
