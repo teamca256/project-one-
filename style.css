@@ -25,7 +25,7 @@ background-color: var(--main-background-color); */
 /*qeybtan home*/
 /*qeybtan  About us*/
 /*qeybtan Academics*/
-  .tileof-fuculty{
+  .title-of-fuculty{
     text-align: center;
     font-weight: bold;
     font-size: 2.3rem;
@@ -134,7 +134,7 @@ background-color: var(--main-background-color); */
      line-height: 1.6;
      letter-spacing: 1px;
      margin-top: 4px;
-     text-align: center;
+     text-align: left;
 }
 .Our-Vision{
     
@@ -157,7 +157,7 @@ background-color: var(--main-background-color); */
      font-size: 1.1rem;
      color: rgb(42, 40, 40);
      line-height: 1.6;
-   text-align: center;
+   text-align: left;
      letter-spacing: 1px;
     
    
