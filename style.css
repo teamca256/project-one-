@@ -8,8 +8,9 @@ background-color: var(--main-background-color); */
   --text-color-1: #1f3a6e;
   --text-color-2: #fff9f0;
   --footer-background-color: #142850;
-
-
+  --font-family-headings: "Cinzel", serif;
+  --font-family-sub-headings: "Poppins", sans-serif;
+  --font-family-paragraphs: "Inter", sans-serif;
 }
 /* sida ay ukala horeeyan usoo gale marka css qoreysid adiga xogta qeybaha kala u gudbeynin*/
 /* qeybtan universal selector*/
