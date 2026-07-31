@@ -407,6 +407,180 @@ background-color: var(--main-background-color); */
   bottom: 16px;
   opacity: 0.5;
 }
+/* Faculty of Business & Management */
+.name-fuculty{
+    text-align: center;
+    padding: 45px 35px;
+    background: linear-gradient(to left,#102753,#2b364c);
+    color: #fff9f0;
+    font-family:'Cinzel', serif ;
+    font-size: 2.7rem;
+    font-weight: bold;
+
+}
+.department-name{
+     text-align: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+     margin-top: 40px;
+     color: #253657;
+   
+}
+.fc-Business-Management-container{
+    display: flex;
+    gap: 15px;
+    justify-content: space-around;
+    margin:30px ;
+    gap: 30px;
+  
+  
+}
+.imagedepartment{
+     width: 450px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px #142850;
+    border: none;
+}
+.describtion-department{
+       font-family: 'Inter', sans-serif;
+     font-size: 1.1rem;
+     color: rgb(45, 44, 44);
+     line-height: 1.6;
+    letter-spacing: 1px;
+     padding: 30px;
+}
+.Students-Learn{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+     margin-top: 40px;
+     color: #253657;
+}
+.Students-Learn-container{
+    display: flex;
+    gap: 36px;
+    justify-content: center;
+    align-items: center;
+}
+.Students-Learn-item{
+    background-color: #142850;
+    border-radius: 10px;
+    padding: 40px 38px;
+    box-shadow: #142850 2px 4px 8px;
+    margin-top: 30px;
+}
+ul{
+    list-style: none;
+}
+li{
+    color: #FFb627;
+    line-height: 2.8;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+
+}
+.choosin-studen-department{
+     text-align: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+     margin-top: 40px;
+     color: #253657;
+}
+table{
+  
+    margin:30px 20px;
+    border-collapse: collapse;
+}
+th ,td{
+  border: 2px solid #1f3a6e;
+  padding: 12px;
+}
+th:nth-child(1){
+    background-color: #FFb627;
+    color: #1f3a6e;
+}
+th:nth-child(2){
+    background-color: #142850;
+    color:#FFb627;
+}
+
+td:nth-child(even){
+    background-color: #FFb627;
+
+}
+td:nth-child(odd){
+    background-color: var(--footer-background-color);
+    color: var(--button-background-color);
+
+}
+
+.fc-Department-of-Finance-container{
+       display: flex;
+    gap: 15px;
+    justify-content: space-around;
+    margin:30px ;
+    gap: 30px;
+}
+.Student-Learn-containers{
+          display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    width: 60%;
+    margin: 0 auto;
+}
+.What-Student-Learn-cards{
+    background-color: var(--button-background-color);
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 14px;
+    color: var(--footer-background-color);
+      text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 12px;
+      box-shadow: var(--footer-background-color) 1px 3px 7px;
+     transition: transform 1s, boder 1s,color 1s, box-shadow 1s, background-color 1s, ease;
+}
+.What-Student-Learn-cards:nth-child(even){
+    background-color: var(--footer-background-color);
+    color: var(--button-background-color);
+}
+
+.What-Student-Learn-cards:hover:nth-child(odd){
+      transform: translateY(12px);
+      color:var(--button-background-color) ;
+      background-color: var(--footer-background-color);
+      box-shadow: 2px 4px 7px var(--button-background-color);
+         border: solid var(--button-background-color) 1px;
+}
+.Student-Learn-item{
+       background-color: var(--button-background-color);
+    border-radius: 10px;
+    padding: 40px 38px;
+    box-shadow: var(--button-background-color) 2px 4px 8px;
+    margin-top: 30px;
+   
+}
+
+.Student-Learn-item ul{
+    list-style: none;
+}
+.Student-Learn-item li{
+    color: var(--footer-background-color);
+    line-height: 2.8;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
 /*qeybtan admisions*/
 
 /*qeybtan contacts*/
