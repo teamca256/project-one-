@@ -242,14 +242,18 @@ background-color: var(--main-background-color); */
 .btn-aplyy-now{
     background-color: #1f3a6e;
     padding: 18px 20px;
-    text-align: center;
-    border: #FFb627 1px solid;
+   border: #FFb627 1px solid;
     margin-top: -20px;
-    color: #FFb627;
     margin-left: 30px;
+  
+}
+ .apply-link{
+    text-decoration: none;
+    color: white;
     font-weight: bold;
     font-size: 1rem;
-}
+     text-align: center;
+ }
 .image-logo{
     width: 150px;
     height: 130px;
