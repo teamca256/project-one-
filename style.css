@@ -704,7 +704,7 @@ ul {
   display: flex;
   text-align: center;
   flex-direction: column;
-  width: 370px;
+  width: 365px;
   border-radius: 12px;
   overflow: hidden; 
   background-color: white;
@@ -719,7 +719,7 @@ ul {
 
 program-card img,
 .img-program {
-  height: 170px;
+  height: 175px;
   width: 100%;
   object-fit: cover;
   display: block;
