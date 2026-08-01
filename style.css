@@ -510,9 +510,6 @@ textarea {
 
 /*qeybtan Academics*/
 
-
-
-
 * {
   margin: 0;
   padding: 0;
@@ -522,7 +519,8 @@ textarea {
 /* Hero Section */
 .academic-container {
   padding: 50px 40px;
-  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5)),
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
     url("https://i.pinimg.com/1200x/1d/05/bb/1d05bb61d570487ee6b7dcab87e1b332.jpg");
   background-size: cover;
   background-position: center;
@@ -564,8 +562,8 @@ textarea {
   margin-top: 60px;
   margin-bottom: 10px;
 }
-.text-p{
-   color: #142850;
+.text-p {
+  color: #142850;
   font-family: sans-serif;
   font-size: 20px;
   margin-bottom: 25px;
@@ -592,7 +590,10 @@ textarea {
   overflow: hidden;
   background-color: white;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background-color 0.3s ease;
 }
 
 .fecult-card img {
@@ -655,7 +656,9 @@ ul {
   font-size: 15px;
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 .card-body button:hover {
@@ -706,10 +709,12 @@ ul {
   flex-direction: column;
   width: 365px;
   border-radius: 12px;
-  overflow: hidden; 
+  overflow: hidden;
   background-color: white;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .program-card:hover {
@@ -774,15 +779,15 @@ program-card img,
   font-size: 14px;
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
 }
 
 .program-btn:hover {
   background-color: #1f3a6e;
   color: #ffb627;
 }
-
-
 
 .title-of-fuculty {
   text-align: center;
@@ -1051,14 +1056,7 @@ program-card img,
   box-shadow: 0px 2px 6px #142850;
   border: none;
 }
-.describtion-department {
-  font-family: "Inter", sans-serif;
-  font-size: 1.1rem;
-  color: rgb(45, 44, 44);
-  line-height: 1.6;
-  letter-spacing: 1px;
-  padding: 30px;
-}
+
 .Students-Learn {
   text-align: center;
   font-weight: bold;
