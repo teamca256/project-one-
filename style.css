@@ -87,7 +87,7 @@ body {
   justify-content: center;
   gap: 20px;
   padding: 20px;
-  margin: 70px auto 20px;
+  margin: 50px auto 20px;
   width: 90%;
   cursor: pointer;
 }
@@ -112,11 +112,12 @@ body {
 .Core-Values {
   background-color: var(--secondary-background-color);
   box-shadow: 4px 10px 12px rgba(0, 0, 0, 0.3);
-  padding: 20px;
+  padding: 30px;
   border-radius: 10px;
   color: var(--text-color-2);
   width: 300px;
-  height: 300px;
+  height: 350px;
+  text-align: justify;
 }
 
 .mision-list {
@@ -509,13 +510,6 @@ textarea {
 }
 
 /*qeybtan Academics*/
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* Hero Section */
 .academic-container {
   padding: 50px 40px;
@@ -577,7 +571,7 @@ textarea {
   text-align: center;
   gap: 70px;
   margin-top: 40px;
-  padding: 0 40px;
+  padding: 0 30px;
   flex-wrap: wrap;
 }
 
@@ -1078,10 +1072,10 @@ program-card img,
   box-shadow: #142850 2px 4px 8px;
   margin-top: 30px;
 }
-ul {
+.list-facalt-business {
   list-style: none;
 }
-li {
+.list-facalt-business li {
   color: #ffb627;
   line-height: 2.8;
   text-align: center;
