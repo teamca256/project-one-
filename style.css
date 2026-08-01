@@ -373,6 +373,7 @@ background-color: var(--main-background-color); */
   background-repeat: no-repeat;
   padding: 40px 30px;
   position: relative;
+    margin-top: 45px;
 }
 .aplly-now-pragraph {
   font-family: "Inter", sans-serif;
