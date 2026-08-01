@@ -373,7 +373,7 @@ background-color: var(--main-background-color); */
   background-repeat: no-repeat;
   padding: 40px 30px;
   position: relative;
-    margin-top: 45px;
+  margin-top: 40px;
 }
 .aplly-now-pragraph {
   font-family: "Inter", sans-serif;
@@ -446,7 +446,7 @@ background-color: var(--main-background-color); */
     border: none;
 }
 .describtion-department{
-       font-family: 'Inter', sans-serif;
+      font-family: 'Inter', sans-serif;
      font-size: 1.1rem;
      color: rgb(45, 44, 44);
      line-height: 1.6;
