@@ -1,10 +1,235 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body></body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Viewport meta tag -->
+    <title>Admission | bright University</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
+
+</head>
+
+<body>
+
+    <!-- ========== HEADER ========== -->
+    <header>
+        <div class="container-nav-wrap">
+            <a href="index.html" class="brand"><span class="crest">BFU &nbsp;</span> Bright future University</a>
+            <nav>
+                <ul>
+                    <li><a href="#programs">Programs</a></li>
+                    <li><a href="#requirements">Requirements</a></li>
+                    <li><a href="#admission-form-section">Admission</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero">
+        <div class="container">
+            <p class="eye">Bright University · Mogadishu</p>
+            <h1>Join Bright Future University — Your Future Starts Here</h1>
+            <p class="sub">Apply now for the chance to pursue a quality education, offered in Mogadishu, Somalia.</p>
+            <a href="#admission-form-section" class="btn">Apply for Admission</a>
+        </div>
+    </section>
+
+    <!-- ========== KEY FACTS ========== -->
+    <div class="container">
+        <div class="facts-strip">
+            <div class="fact"><strong>12+</strong><span>Faculties</span></div>
+            <div class="fact"><strong>6,000+</strong><span>Students</span></div>
+            <div class="fact"><strong>25+</strong><span>Programs</span></div>
+            <div class="fact"><strong>98%</strong><span>Employed after graduation</span></div>
+        </div>
+    </div>
+
+    <!-- ========== PROGRAMS ========== -->
+    <section id="programs">
+        <div class="programs-container">
+            <div class="section-head">
+                <h1 class="eyebrow">Programs</h1>
+                <h2>Choose Your Program</h2>
+                <p class="desc">We offer BA and BSc programs designed to match the demands of the job market.</p>
+            </div>
+
+            <div class="programs-grid">
+                <div class="program-card">
+                    <h3>Computer Science</h3>
+                    <p>Software Engineering, Web Development, and Data Science.</p>
+                </div>
+                <div class="program-card">
+                    <h3>Business & Management</h3>
+                    <p>Business Administration, Accounting, and Marketing.</p>
+                </div>
+                <div class="program-card">
+                    <h3>Health Sciences</h3>
+                    <p>Nursing, Public Health, and Pharmacy.</p>
+                </div>
+                <div class="program-card">
+                    <h3>Law</h3>
+                    <p>LLB — Somali and International Law.</p>
+                </div>
+                <div class="program-card">
+                    <h3>Engineering</h3>
+                    <p>Civil, Electrical, and Computer Engineering.</p>
+                </div>
+                <div class="program-card">
+                    <h3>Social Sciences</h3>
+                    <p>International Relations and Public Administration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== REQUIREMENTS ========== -->
+    <section class="requirements">
+        <h1 class="eyebrow">Requirements</h1>
+        <h2>Admission Requirements</h2>
+        <p class="desc">Make sure you meet these requirements before applying.</p>
+        <div class="requirement-container">
+            <div class="requirement-card">
+                <h2>Education</h2>
+                <p> Must have Completed Secondary School Certificate accredited by the Ministry of Higher Education</p>
+            </div>
+            <div class="requirement-card">
+                <h2>certificate</h2>
+
+                <p> 1. Should bring the original Secondary School Leaving Certificate.<br>
+                    2. Include two (2) photocopies of the certificate</p>
+
+            </div>
+            <div class="requirement-card">
+                <h2>phots</h2>
+                <p>1. Should bring four (4) passport-size photos.<br>
+                    2. Include two (2) photocopies of the photos</p>
+                </p>Background must be white.</p>
+            </div>
+            <div class="requirement-card">
+                <h2>registration fee</h2>
+                <p>All programs = $25<br>
+                    Note: <span id="fee-note">Fees are non-refundable.
+                    </span>
+                </p>
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+    <!-- ========== ADMISSION FORM ========== -->
+    <section id="admission-form-section">
+        <div class="container">
+            <div class="section-head">
+                <p class="eyebrow">Application Form</p>
+                <h2>Apply for Admission</h2>
+                <p class="desc">Fill out the form below — our admissions team will contact you within 3–5 days.</p>
+            </div>
+
+            <form id="admission-form" action="#" method="post">
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="full-name">Full Name</label>
+                            <input type="text" id="full-name" name="full-name" placeholder="e.g. Isse Abdi Hassan"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" id="dob" name="dob" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Gender</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="gender" value="male" checked> Male</label>
+                                <label><input type="radio" name="gender" value="female"> Female</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="nationality">Nationality</label>
+                            <input type="text" id="nationality" name="nationality" placeholder="Somali" value="Somali">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+252 61 xxx xxxx" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group full">
+                        <label for="address">Home Address</label>
+                        <input type="text" id="address" name="address" placeholder="District, Neighborhood">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Academic Information</legend>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="program">Preferred Program</label>
+                            <select id="program" name="program">
+                                <option>Computer Science</option>
+                                <option>Business & Management</option>
+                                <option>Health Sciences</option>
+                                <option>Law</option>
+                                <option>Engineering</option>
+                                <option>Social Sciences</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="prev-school">Previous School</label>
+                            <input type="text" id="prev-school" name="prev-school" placeholder="School name">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="grad-year">Graduation Year</label>
+                            <input type="number" id="grad-year" name="grad-year" min="2000" max="2026"
+                                placeholder="2025">
+                        </div>
+                        <div class="form-group">
+                            <label for="average">Grade Average (%)</label>
+                            <input type="number" id="average" name="average" min="0" max="100" placeholder="e.g. 85">
+                        </div>
+                    </div>
+                    <div class="form-group full">
+                        <label for="certificate">Upload Certificate (PDF/Image)</label>
+                        <input type="file" id="certificate" name="certificate" accept=".pdf,.jpg,.png">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <div class="form-group full">
+                        <label for="statement">Why do you want to study this program?</label>
+                        <textarea id="statement" name="statement" placeholder="Write a short statement..."></textarea>
+                    </div>
+                </fieldset>
+
+                <div class="checkbox-row">
+                    <input type="checkbox" id="agree" name="agree" required>
+                    <label for="agree">I confirm that the information above is accurate, and I agree to the Terms &
+                        Conditions of Bright future University.</label>
+                </div>
+
+                <button type="submit">Submit Application</button>
+            </form>
+        </div>
+    </section>
+
+   
+
+</body>
+
 </html>
