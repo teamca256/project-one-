@@ -42,13 +42,14 @@ body {
 .about-title {
   background: linear-gradient(
     90deg,
-    rgba(var(--secondary-background-rgb), 0.9),
-    rgba(var(--button-background-rgb), 0.8)
+    var(--secondary-background-color),
+    var(--button-background-color)
   );
+
   width: 100%;
   height: 60px;
   text-align: center;
-  color: var(--text-color-2);
+  color: var(--text-color-1);
   padding: 10px;
   font-family: var(--font-family-headings);
 }
@@ -210,13 +211,14 @@ body {
 .membership-title {
   background: linear-gradient(
     90deg,
-    rgba(var(--secondary-background-rgb), 0.9),
-    rgba(var(--button-background-rgb), 0.8)
+    var(--secondary-background-color),
+    var(--button-background-color)
   );
+
   width: 100%;
   height: 60px;
   text-align: center;
-  color: var(--text-color-2);
+  color: var(--text-color-1);
   padding: 20px;
   font-family: var(--font-family-headings);
 }
@@ -249,39 +251,35 @@ body {
   list-style-type: square;
 }
 
-.text-paragphg-global{
+.text-paragphg-global {
   font-family: var(--font-family-paragraphs);
- width: 600px;
- height: 20px;
- margin: 20px 20px;
- 
+  width: 600px;
+  height: 20px;
+  margin: 20px 20px;
 }
-hr{
+hr {
   background-color: var(--button-background-color);
   height: 3px;
 }
-.sub-title-national{
+.sub-title-national {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
-  padding:50px;
+  padding: 50px;
   color: var(--text-color-1);
   font-family: var(--font-family-sub-headings);
   font-weight: bold;
 }
 
-.nationl-m{
-   display: grid;
+.nationl-m {
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   margin-top: 30px;
   padding: 30px;
   margin: 0;
- 
-
 }
 .membership-card {
-  
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -289,18 +287,17 @@ hr{
   align-items: stretch;
   gap: 40px;
   background-color: var(--main-background-color);
-   border: solid var(--secondary-background-color);
+  border: solid var(--secondary-background-color);
   margin: 10px;
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 .membership-card img {
-  width:100%;
-  width:190px;
+  width: 100%;
+  width: 190px;
   height: 90px;
   border-radius: 10px;
-  
 }
 /* styleka qeybta admissionka waaye filesha ka horeyan kan stlekoda kor kunqora kuwa kadambeyana hootisa kuqora */
 
@@ -446,22 +443,20 @@ h2 {
 .programs-container h2 {
   font-size: 30px;
   margin-top: 20px;
- 
 }
 
 .programs-grid {
-  display:flex;
+  display: flex;
   /* flex-wrap: wrap; */
   gap: 30px;
 }
 
 .program-card {
- 
   padding: 20px;
   border-radius: 10px;
   text-align: center;
   transition: 0.3s ease;
-  padding: 50px 20px ;
+  padding: 50px 20px;
   text-align: center;
   color: var(--text-color-2);
 }
@@ -476,41 +471,39 @@ h2 {
   margin: 50px 20px;
   padding: 15px;
   border-radius: 10px;
-  
 }
 .requirements h2 {
-    margin-top: 20px;
-    padding-bottom: 30px;
-    }
+  margin-top: 20px;
+  padding-bottom: 30px;
+}
 
 .requirement-container {
-   max-height: 280px;
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   text-align: center;
-   gap: 20px;
-   margin-top: 20px;
-   color: var(--text-color-2);
-   font-family:'Times New Roman', Times, serif;
-   line-height: 1.5;
-   font-size: 1.1rem;
+  max-height: 280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  margin-top: 20px;
+  color: var(--text-color-2);
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.5;
+  font-size: 1.1rem;
 }
 
 .requirement-card {
-    max-width: 280px;
-    background-color: var(--text-color-2);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    transition: 0.3s ease;
-    color: var(--text-color-1);
-    text-align: center;
-    box-shadow:  0 0 10px rgba(62, 58, 58, 0.2);
+  max-width: 280px;
+  background-color: var(--text-color-2);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s ease;
+  color: var(--text-color-1);
+  text-align: center;
+  box-shadow: 0 0 10px rgba(62, 58, 58, 0.2);
 }
 
 .requirement-card:hover {
-
   transform: scale(1.05);
 }
 
@@ -604,9 +597,8 @@ textarea {
   gap: 0.4rem;
   font-weight: 500;
 }
-  /* axpapi checkebox style keda wan fahmi wayay qofki iga fcn ha qurrxiyo */
+/* axpapi checkebox style keda wan fahmi wayay qofki iga fcn ha qurrxiyo */
 .checkbox-row {
-  
 }
 .admission-form button {
   width: 100%;
@@ -627,7 +619,6 @@ textarea {
 }
 
 /*qeybtan Academics*/
-
 
 /* Hero Section */
 .academic-container {
@@ -746,7 +737,7 @@ textarea {
 }
 
 .feculty-container ul li {
-  color:#142850;
+  color: #142850;
   font-size: 16px;
   padding: 6px 0;
   line-height: 1.3;
@@ -817,7 +808,9 @@ textarea {
   overflow: hidden;
   background-color: white;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .program-card:hover {
@@ -1155,8 +1148,8 @@ textarea {
   box-shadow: 0px 2px 6px #142850;
   border: none;
 }
-.describtion-department{
-      font-family: "Inter", sans-serif;
+.describtion-department {
+  font-family: "Inter", sans-serif;
   font-size: 1.1rem;
   color: rgb(42, 40, 40);
   margin-top: 50px;
@@ -1178,24 +1171,26 @@ textarea {
   justify-content: center;
   align-items: center;
 }
-.Students-Learn-item {
+.Students-Learn-item ul {
   background-color: #142850;
   border-radius: 10px;
   padding: 40px 38px;
   box-shadow: #142850 2px 4px 8px;
   margin-top: 30px;
 }
-.list-facalt-business {
+.students-learn-list {
   list-style: none;
 }
-.list-facalt-business li {
-  color: #ffb627;
+.students-learn-list li {
+  color: var(--button-background-color);
   line-height: 2.8;
-  text-align: center;
+  text-align:left;
   letter-spacing: 1px;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
 }
+
+
 .choosin-studen-department {
   text-align: center;
   font-weight: bold;
@@ -1284,13 +1279,13 @@ td:nth-child(odd) {
   margin-top: 30px;
 }
 
-.Student-Learn-item ul {
+.list-facalt {
   list-style: none;
 }
-.Student-Learn-item li {
+.list-facalt li {
   color: var(--footer-background-color);
   line-height: 2.8;
-  text-align: center;
+  text-align: left;
   letter-spacing: 1px;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
@@ -1412,7 +1407,7 @@ textarea {
   resize: none;
 }
 
-button {
+.contact-btn {
   width: 100%;
   height: 55px;
 
@@ -1420,13 +1415,13 @@ button {
   border-radius: 12px;
 
   background-color: #1f3a6e;
-  color:#ffb627;
+  color: #ffb627;
 
   font-size: 15px;
   cursor: pointer;
 }
 
-button:hover {
+.contact-btn:hover {
   background-color: #1f3a6e;
 }
 
@@ -1460,7 +1455,6 @@ button:hover {
     gap: 0;
   }
 }
-
 
 /* qeybta footrs*/
 /* >>>>>>> d5551b3672a6dc3d96e8e1a0e64b809b76b67458 */
