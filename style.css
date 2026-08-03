@@ -465,7 +465,7 @@ h2 {
   box-shadow: 5px 5px 10px rgba(178, 167, 167, 0.2);
   transform: scale(1.05);
 }
-/* =====requirements===== */
+/* =====ADmission requirements===== */
 
 .requirements {
   margin: 50px 20px;
@@ -630,6 +630,9 @@ textarea {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+}
+.academic-container{
+  margin-top: 1000px;
 }
 
 .academic-container img {
