@@ -87,7 +87,7 @@ body {
   justify-content: center;
   gap: 20px;
   padding: 20px;
-  margin: 50px auto 20px;
+  margin: 70px auto 20px;
   width: 90%;
   cursor: pointer;
 }
@@ -112,12 +112,11 @@ body {
 .Core-Values {
   background-color: var(--secondary-background-color);
   box-shadow: 4px 10px 12px rgba(0, 0, 0, 0.3);
-  padding: 30px;
+  padding: 20px;
   border-radius: 10px;
   color: var(--text-color-2);
   width: 300px;
-  height: 350px;
-  text-align: justify;
+  height: 300px;
 }
 
 .mision-list {
@@ -510,12 +509,8 @@ textarea {
 }
 
 /*qeybtan Academics*/
-<<<<<<< HEAD
 
 
-=======
-/* Hero Section */
->>>>>>> 8b4c6542782673f5af42dd6b69613f280ea7c4fd
 .academic-container {
   padding: 50px 40px;
   background:
@@ -539,13 +534,13 @@ textarea {
   padding: 25px 0;
 
   margin-bottom: 10px;
-  color: #e0e0e0;
+  color:var(--main-background-color);
   font-size: 60px;
   font-family: var(--font-family-headings);
 }
 
 .text-container h2 {
-  color: #ffb627;
+  color: var(--button-background-color);
   font-family: var(--font-family-sub-headings);
   max-width: 800px;
   line-height: 1.5;
@@ -557,12 +552,12 @@ textarea {
   font-family: var(--font-family-headings);
   font-size: 45px;
   font-weight: bold;
-  color: #1f3a6e;
+  color: var(--text-color-1);
   margin-top: 60px;
   margin-bottom: 10px;
 }
 .text-p {
-  color: #142850;
+  color: var(--secondary-background-color);
   font-family: var(--font-family-paragraphs);
   font-size: 20px;
   font-weight: 400;
@@ -575,9 +570,10 @@ textarea {
   justify-content: center;
   align-items: stretch;
   text-align: center;
+  
   gap: 70px;
   margin-top: 40px;
-  padding: 0 30px;
+  padding: 0 40px;
   flex-wrap: wrap;
 }
 
@@ -585,10 +581,11 @@ textarea {
   display: flex;
   text-align: center;
   flex-direction: column;
-  width: 310px;
+  width: 340px;
+  height: auto;
   border-radius: 12px;
   overflow: hidden;
-  background-color: white;
+  background-color: var(--main-background-color);
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
   transition:
     transform 0.3s ease,
@@ -621,7 +618,7 @@ textarea {
 }
 
 .fecult-title {
-  color: #142850;
+  color: var(--secondary-background-color);
   font-size: 20px;
   font-weight: bold;
   font-family: var(--font-family-headings);
@@ -632,7 +629,7 @@ textarea {
 }
 
 .feculty-container ul li {
-  color:#142850;
+  color:var(--footer-background-color);
   font-size: 16px;
   padding: 6px 0;
   line-height: 1.3;
@@ -643,8 +640,8 @@ textarea {
   margin-top: auto;
   padding: 12px 30px;
   border-radius: 12px;
-  background-color: #ffb627;
-  color: #142850;
+  background-color: var(--button-background-color);
+  color: var(--footer-background-color);
   border: none;
   font-size: 15px;
   font-weight: bold;
@@ -655,8 +652,8 @@ textarea {
 }
 
 .card-body button:hover {
-  background-color: #142850;
-  color: #ffb627;
+  background-color: var(--footer-background-color);
+  color: var(--button-background-color);
 }
 
 /* Our Academic Programs */
@@ -669,15 +666,15 @@ textarea {
 .acdmy-heading {
   margin-top: 30px;
   margin-bottom: 15px;
-  color: #1f3a6e;
+  color: var(--text-color-1);
   font-family: var(--font-family-headings);
   font-size: 50px;
 }
 
 .academic-subtitle {
-  color: #142850;
+  color: var(--footer-background-color);
   font-family: var(--font-family-sub-headings);
-  font-size: 26px;
+  font-size: 20px;
   font-weight: bold;
   max-width: 800px;
   margin: 0 auto 35px auto;
@@ -689,15 +686,16 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 100px;
-  padding: 0 40px;
+  gap: 120px;
+  padding: 0 50px;
   flex-wrap: wrap;
 }
 
 .program-card {
   display: flex;
   flex-direction: column;
-  width: 370px;
+  width: 390px;
+  
   padding-top: 0;
   border-radius: 12px;
   overflow: hidden;
@@ -717,8 +715,8 @@ textarea {
   object-fit: cover;
 }
 .program-card h3 {
-  color: #142850;
-  font-size: 25px;
+  color: var(--text-color-1);
+  font-size: 20px;
   font-weight: bold;
   font-family: var(--font-family-headings);
   margin-top: 15px;
@@ -727,8 +725,8 @@ textarea {
 }
 
 .program-card p {
-  color: #142850;
-  font-size: 22px;
+  color: var(--secondary-background-color);
+  font-size: 20px;
   line-height: 1.4;
   padding: 0 15px;
   margin-bottom: 12px;
@@ -742,9 +740,9 @@ textarea {
 }
 
 .program-list li {
-  color: #1f3a6e;
+  color: var(--text-color-1);
   line-height: 1.3;
-  font-size: 17px;
+  font-size: 15px;
   padding: 6px 0;
   border-bottom: 1px dashed #e2e8f0;
   text-align: center;
@@ -755,8 +753,8 @@ textarea {
 }
 
 .program-btn {
-  background-color: #ffb627;
-  color: #142850;
+  background-color: var(--button-background-color);
+  color:var(--footer-background-color);
   border: none;
   padding: 10px 16px;
   margin: 0 15px 20px 15px;
@@ -770,8 +768,8 @@ textarea {
 }
 
 .program-btn:hover {
-  background-color: #1f3a6e;
-  color: #ffb627;
+  background-color: var(--footer-background-color);
+  color: var(--button-background-color);
 }
 /* departments */
 .title-of-fuculty {
@@ -1063,10 +1061,10 @@ textarea {
   box-shadow: #142850 2px 4px 8px;
   margin-top: 30px;
 }
-.list-facalt-business {
+ul {
   list-style: none;
 }
-.list-facalt-business li {
+li {
   color: #ffb627;
   line-height: 2.8;
   text-align: center;
@@ -1176,169 +1174,6 @@ td:nth-child(odd) {
 /*qeybtan admisions*/
 
 /*qeybtan contacts*/
-.contact-container {
-  max-width: 1200px;
-  min-height: 560px;
-  margin: auto;
-  background-color: white;
-
-  display: flex;
-  justify-content: space-between;
-
-  padding: 55px 50px;
-}
-
-/* LEFT SIDE */
-
-.contact-info {
-  width: 45%;
-}
-
-.contact-info h1 {
-  font-size: 55px;
-  font-weight: 400;
-  margin-bottom: 30px;
-}
-
-.info {
-  margin-bottom: 25px;
-}
-
-.label {
-  color: #ec6e07;
-  font-size: 15px;
-  margin-bottom: 8px;
-}
-
-.info p:not(.label) {
-  font-size: 18px;
-  line-height: 1.5;
-}
-
-.follow {
-  margin-top: 25px;
-}
-
-.social-icons {
-  display: flex;
-  gap: 12px;
-  margin-top: 10px;
-}
-
-.social-icons a {
-  width: 36px;
-  height: 36px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background-color: #1f3a6e;
-  color: #ffb627;
-
-  text-decoration: none;
-  border-radius: 50%;
-
-  font-size: 14px;
-  font-weight: bold;
-}
-
-/* RIGHT SIDE */
-
-.contact-form {
-  width: 48%;
-}
-
-.input-row {
-  display: flex;
-  gap: 25px;
-}
-
-.input-group {
-  width: 100%;
-  margin-bottom: 25px;
-}
-
-.input-group label {
-  display: block;
-  margin-bottom: 12px;
-
-  font-size: 14px;
-  font-weight: bold;
-}
-
-input,
-textarea {
-  width: 100%;
-  border: none;
-  outline: none;
-
-  background-color: #ffb627;
-  border-radius: 15px;
-
-  padding: 18px 20px;
-
-  font-size: 15px;
-}
-
-input {
-  height: 55px;
-}
-
-textarea {
-  height: 210px;
-  resize: none;
-}
-
-button {
-  width: 100%;
-  height: 55px;
-
-  border: none;
-  border-radius: 12px;
-
-  background-color: #1f3a6e;
-  color:#ffb627;
-
-  font-size: 15px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #1f3a6e;
-}
-
-/* MOBILE */
-
-@media (max-width: 768px) {
-  body {
-    padding: 10px;
-  }
-
-  .contact-container {
-    flex-direction: column;
-    padding: 30px 20px;
-  }
-
-  .contact-info,
-  .contact-form {
-    width: 100%;
-  }
-
-  .contact-info {
-    margin-bottom: 50px;
-  }
-
-  .contact-info h1 {
-    font-size: 42px;
-  }
-
-  .input-row {
-    flex-direction: column;
-    gap: 0;
-  }
-}
-
 
 /* qeybta footrs*/
 /* >>>>>>> d5551b3672a6dc3d96e8e1a0e64b809b76b67458 */
