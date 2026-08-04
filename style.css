@@ -570,7 +570,6 @@ textarea {
   justify-content: center;
   align-items: stretch;
   text-align: center;
-  
   gap: 70px;
   margin-top: 40px;
   padding: 0 40px;
@@ -686,16 +685,15 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 120px;
-  padding: 0 50px;
+  gap: 100px;
+  padding: 0 40px;
   flex-wrap: wrap;
 }
 
 .program-card {
   display: flex;
   flex-direction: column;
-  width: 390px;
-  
+  width: 370px;
   padding-top: 0;
   border-radius: 12px;
   overflow: hidden;
