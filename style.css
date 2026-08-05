@@ -2,7 +2,7 @@
 markad isticmaleyso sidan u isticmalee
 background-color: var(--main-background-color); */
 /* sida ay ukala horeeyan usoo gale marka css qoreysid adiga xogta qeybaha kala u gudbeynin*/
-/* qeybtan universal selector*/
+
 
 /* qeybtan body*/
 /*qeybtah headers*/
@@ -23,6 +23,7 @@ background-color: var(--main-background-color); */
   --secondary-background-rgb: 31, 58, 110;
   --button-background-rgb: 255, 182, 39;
 }
+/* qeybtan universal selector*/
 
 * {
   margin: 0;
@@ -31,7 +32,7 @@ background-color: var(--main-background-color); */
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  background-color: var(--main-background-color);
 }
 /* =======qeybta about us ================*/
 .about-us {
@@ -105,6 +106,7 @@ body {
   font-size: 1, 5rem;
   color: var(--text-color-2);
   margin: 20px;
+
 }
 
 .about-vision,
@@ -115,8 +117,9 @@ body {
   padding: 20px;
   border-radius: 10px;
   color: var(--text-color-2);
+  
   width: 300px;
-  height: 300px;
+  height: 330px;
 }
 
 .mision-list {
@@ -189,6 +192,170 @@ body {
   color: var(--secondary-background-color);
   font-size: 1rem;
   font-family: var(--font-family-paragraphs);
+}
+/* =======qeybta membership and patterns ================*/
+.membership-and-patterns {
+  margin: 0 auto;
+  max-width: 100%;
+}
+.text-paragphy-membership {
+  margin: 0 30px;
+  font-size: 1.2rem;
+  font-family: var(--font-family-paragraphs);
+  text-align: left;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 30px;
+  display: flex;
+}
+
+.membership-title {
+  background: linear-gradient(
+    90deg,
+    var(--secondary-background-color),
+    var(--button-background-color)
+  );
+
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  color: var(--text-color-1);
+  padding: 20px;
+  font-family: var(--font-family-headings);
+}
+
+.membership-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin: 0 auto;
+  float: left;
+}
+.sub-title-membership {
+  font-family: var(--font-family-sub-headings);
+  font-size: 1.5rem;
+  color: var(--text-color-1);
+
+  font-weight: normal;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  padding: 10px;
+  clear: both;
+  font-weight: bold;
+}
+.membership-list {
+  margin: 20px 30px;
+  font-size: 1.1rem;
+  font-family: var(--font-family-paragraphs);
+
+  list-style-type: square;
+}
+
+.text-paragphg-global {
+  font-family: var(--font-family-paragraphs);
+  width: 600px;
+  height: 20px;
+  margin: 20px 20px;
+}
+hr {
+  background-color: var(--button-background-color);
+  height: 3px;
+}
+.sub-title-national {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 50px;
+  color: var(--text-color-1);
+  font-family: var(--font-family-sub-headings);
+  font-weight: bold;
+}
+
+.nationl-m {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+  padding: 30px;
+  margin: 0;
+}
+.membership-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 40px;
+  
+  border: solid var(--secondary-background-color);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.membership-card img {
+  width: 100%;
+  width: 190px;
+  height: 90px;
+  border-radius: 10px;
+}
+/*qeybta sStrategic Goals*/
+.title-stratagetic {
+  background: linear-gradient(
+    90deg,
+    var(--secondary-background-color),
+    var(--button-background-color)
+  );
+
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  color: var(--text-color-1);
+  padding: 20px;
+  font-family: var(--font-family-headings);
+  font-weight: bold;
+}
+.stratagetic-goals-content {
+  margin: 20px 10px;
+  font-size: 1.2rem;
+  font-family: var(--font-family-paragraphs);
+  text-align: left;
+}
+.stratagetic-continer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 20px;
+  padding: 30px;
+  margin: 0;
+}
+.card-stratagetic {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+background-color: var(--secondary-background-color);
+  gap: 40px;
+  border: none;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.card-title-stratagetic {
+  font-family: var(--font-family-sub-headings);
+  font-size: 1.5rem;
+  color: var(--button-background-color);
+  text-align: left;
+  font-weight: bold;
+}
+.stratagetic-goals-paragraph{
+  font-family: var(--font-family-paragraphs);
+  font-size: 1.2rem;
+  color: var(--text-color-2);
+ 
 }
 /* styleka qeybta admissionka waaye filesha ka horeyan kan stlekoda kor kunqora kuwa kadambeyana hootisa kuqora */
 
@@ -344,7 +511,7 @@ body {
   color: var(--text-color-2);
 }
 
-.fact {
+*.fact {
   text-align: center;
   padding: 40px;
   background-color: var(--box-model-background-color);
@@ -355,7 +522,7 @@ body {
 .fact:hover {
   box-shadow: 5px 5px 10px rgba(178, 167, 167, 0.2);
   transform: scale(1.05);
-}
+} */
 /*======= programs========= */
 .faculties-fees{
   background-color: var(--main-background-color);
@@ -647,7 +814,7 @@ textarea {
 .text-feculty {
   text-align: center;
   font-family: var(--font-family-headings);
-  font-size: 45px;
+  font-size: 2rem;
   font-weight: bold;
   color: var(--text-color-1);
   margin-top: 60px;
@@ -656,10 +823,12 @@ textarea {
 .text-p {
   color: var(--secondary-background-color);
   font-family: var(--font-family-paragraphs);
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 1.1rem;
+
   margin-bottom: 25px;
   text-align: center;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
 }
 
 .feculty-container {
@@ -730,21 +899,24 @@ textarea {
   padding: 6px 0;
   line-height: 1.3;
   text-align: left;
+  list-style-type: none;
 }
 
-.card-body button {
+.link-learn {
   margin-top: auto;
   padding: 12px 30px;
   border-radius: 12px;
   background-color: var(--button-background-color);
   color: var(--footer-background-color);
   border: none;
-  font-size: 15px;
+  font-size: 1.1rem;
   font-weight: bold;
   cursor: pointer;
   transition:
     background-color 0.3s ease,
     color 0.3s ease;
+    text-decoration: none;
+
 }
 
 .card-body button:hover {
@@ -770,12 +942,13 @@ textarea {
 .academic-subtitle {
   color: var(--footer-background-color);
   font-family: var(--font-family-sub-headings);
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 1rem;
   max-width: 800px;
-  margin: 0 auto 35px auto;
+  margin: 20px auto ;
   line-height: 1.5;
   padding: 0 20px;
+ 
+  letter-spacing: 0.5px;
 }
 
 .program-grid {
@@ -1134,6 +1307,14 @@ textarea {
   box-shadow: 0px 2px 6px #142850;
   border: none;
 }
+.describtion-department{
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  color: rgb(42, 40, 40);
+  margin-top: 50px;
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
 
 .Students-Learn {
   text-align: center;
@@ -1156,13 +1337,13 @@ textarea {
   box-shadow: #142850 2px 4px 8px;
   margin-top: 30px;
 }
-ul {
+.students-learn-list {
   list-style: none;
 }
-li {
+.li-list {
   color: #ffb627;
   line-height: 2.8;
-  text-align: center;
+  text-align: left;
   letter-spacing: 1px;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
@@ -1261,7 +1442,7 @@ td:nth-child(odd) {
 .Student-Learn-item li {
   color: var(--footer-background-color);
   line-height: 2.8;
-  text-align: center;
+  text-align: left;
   letter-spacing: 1px;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
@@ -1272,3 +1453,4 @@ td:nth-child(odd) {
 
 /* qeybta footrs*/
 /* >>>>>>> d5551b3672a6dc3d96e8e1a0e64b809b76b67458 */
+ 
