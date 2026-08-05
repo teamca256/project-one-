@@ -2,7 +2,7 @@
 markad isticmaleyso sidan u isticmalee
 background-color: var(--main-background-color); */
 /* sida ay ukala horeeyan usoo gale marka css qoreysid adiga xogta qeybaha kala u gudbeynin*/
-/* qeybtan universal selector*/
+
 
 /* qeybtan body*/
 /*qeybtah headers*/
@@ -23,6 +23,7 @@ background-color: var(--main-background-color); */
   --secondary-background-rgb: rgb(31, 58, 110);
   --button-background-rgb: rgb(255, 182, 39);
 }
+/* qeybtan universal selector*/
 
 * {
   margin: 0;
@@ -286,7 +287,7 @@ hr {
   justify-content: center;
   align-items: stretch;
   gap: 40px;
-  background-color: var(--main-background-color);
+  background-color: var(---);
   border: solid var(--secondary-background-color);
   margin: 10px;
   padding: 10px;
