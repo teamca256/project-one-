@@ -32,7 +32,7 @@ background-color: var(--main-background-color); */
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  background-color: var(--main-background-color);
 }
 /* =======qeybta about us ================*/
 .about-us {
@@ -106,6 +106,7 @@ body {
   font-size: 1, 5rem;
   color: var(--text-color-2);
   margin: 20px;
+
 }
 
 .about-vision,
@@ -116,8 +117,9 @@ body {
   padding: 20px;
   border-radius: 10px;
   color: var(--text-color-2);
+  
   width: 300px;
-  height: 300px;
+  height: 330px;
 }
 
 .mision-list {
@@ -191,7 +193,6 @@ body {
   font-size: 1rem;
   font-family: var(--font-family-paragraphs);
 }
-<<<<<<< HEAD
 /* =======qeybta membership and patterns ================*/
 .membership-and-patterns {
   margin: 0 auto;
@@ -286,7 +287,7 @@ hr {
   justify-content: center;
   align-items: stretch;
   gap: 40px;
-  background-color: var(---);
+  
   border: solid var(--secondary-background-color);
   margin: 10px;
   padding: 10px;
@@ -299,8 +300,63 @@ hr {
   height: 90px;
   border-radius: 10px;
 }
-=======
->>>>>>> 609aa62ce353bd949bd413f81699ccedda97ba88
+/*qeybta sStrategic Goals*/
+.title-stratagetic {
+  background: linear-gradient(
+    90deg,
+    var(--secondary-background-color),
+    var(--button-background-color)
+  );
+
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  color: var(--text-color-1);
+  padding: 20px;
+  font-family: var(--font-family-headings);
+  font-weight: bold;
+}
+.stratagetic-goals-content {
+  margin: 20px 10px;
+  font-size: 1.2rem;
+  font-family: var(--font-family-paragraphs);
+  text-align: left;
+}
+.stratagetic-continer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 20px;
+  padding: 30px;
+  margin: 0;
+}
+.card-stratagetic {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+background-color: var(--secondary-background-color);
+  gap: 40px;
+  border: none;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.card-title-stratagetic {
+  font-family: var(--font-family-sub-headings);
+  font-size: 1.5rem;
+  color: var(--button-background-color);
+  text-align: left;
+  font-weight: bold;
+}
+.stratagetic-goals-paragraph{
+  font-family: var(--font-family-paragraphs);
+  font-size: 1.2rem;
+  color: var(--text-color-2);
+ 
+}
 /* styleka qeybta admissionka waaye filesha ka horeyan kan stlekoda kor kunqora kuwa kadambeyana hootisa kuqora */
 
 /* ====Admissionka==== */
@@ -417,7 +473,7 @@ nav ul li a:hover {
   margin: 50px 0px;
 }
 
-.fact {
+*.fact {
   text-align: center;
   padding: 40px;
   background-color: var(--box-model-background-color);
@@ -428,7 +484,7 @@ nav ul li a:hover {
 .fact:hover {
   box-shadow: 5px 5px 10px rgba(178, 167, 167, 0.2);
   transform: scale(1.05);
-}
+} */
 /*======= programs========= */
 
 .programs-container {
@@ -1300,3 +1356,4 @@ td:nth-child(odd) {
 
 /* qeybta footrs*/
 /* >>>>>>> d5551b3672a6dc3d96e8e1a0e64b809b76b67458 */
+ 
