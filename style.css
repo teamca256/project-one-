@@ -1854,28 +1854,28 @@ font-family: var(--text-sub-heading);
   margin-top: 40px;
   color: #253657;
 }
-table {
+.table-of-carer-choosedepartment {
   margin: 30px 20px;
   border-collapse: collapse;
 }
-th,
+.table-title,
 td {
   border: 2px solid #1f3a6e;
   padding: 12px;
 }
-th:nth-child(1) {
+.table-title:nth-child(1) {
   background-color: #ffb627;
   color: #1f3a6e;
 }
-th:nth-child(2) {
+.table-title:nth-child(2) {
   background-color: #142850;
   color: #ffb627;
 }
 
-td:nth-child(even) {
+.table-cells:nth-child(even) {
   background-color: #ffb627;
 }
-td:nth-child(odd) {
+.table-cell:nth-child(odd) {
   background-color: var(--footer-background-color);
   color: var(--button-background-color);
 }
