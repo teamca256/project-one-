@@ -32,7 +32,7 @@ background-color: var(--main-background-color); */
 }
 
 body {
-  background-color: var(--main-background-color);
+  /* background-color: var(--main-background-color); */
 }
 /* =======qeybta about us ================*/
 .about-us {
@@ -1278,22 +1278,21 @@ textarea {
 
 /* deparment of engineering */
 .header-civil{
-  background-color: var(--footer-background-color);
-  color: var(--text-color-2);
   text-align: center;
-  padding: 30px 40px;
-  font-size: 3rem;
+  padding: 45px 35px;
+  background: linear-gradient(to left, #102753, #2b364c);
+  color: #fff9f0;
+  font-family: "Cinzel", serif;
+  font-size: 2.7rem;
   font-weight: bold;
-  font-family: var(--text-header)
 }
 .sub-civil{
-  text-align: center;
-  margin: 30px;
-  padding: 15px;
+ text-align: center;
   font-weight: bold;
-  font-size: 2.6rem;
-  font-family: var(--text-sub-heading);
-  color: var(--text-color-1);
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  margin-top: 40px;
+  color: #253657;
 
 }
 .civil-conatiner{
@@ -1303,26 +1302,26 @@ textarea {
   align-items: stretch;
 }
 .img-civil{
-  width: 800px;
-  height:600px;
+  width: 450px;
+  height: 350px;
   object-fit: cover;
-  border-radius: 18px;
-  margin-left: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px #ffb627;
+  border: none;
+  margin:25px
 }
 .civil-p{
-  margin-left: 10px;
-  line-height: 1.4;
-  
-  font-family: var(--text-pragraph);
-  font-size: 29px;
-  color: var(--text-color-1);
-  margin-top: 30px;
-  margin-right: 0px;
+ font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  color: rgb(42, 40, 40);
+  margin-top: 50px;
+  line-height: 1.6;
+  letter-spacing: 1px;
 }
 .civil-learn-cont{
   display: grid;
-  gap: 55px;
-  grid-template-columns: repeat(4, 2fr);
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
   margin: 30px;
   width: 60%;
   margin: 0 auto;
@@ -1340,60 +1339,50 @@ font-family: var(--text-sub-heading);
 }
 
 /* deparment of  machinacal engineerin */
-.header-machanical{
-  background-color:var(--secondary-background-color);
-  color: var(--text-color-2);
-  text-align: center;
-  padding: 30px 40px;
-  font-size: 3rem;
-  font-weight: bold;
-  font-family: var(--text-header)
-}
+
 .sub-machanical{
-  text-align: center;
-  margin: 30px;
-  padding: 50px;
-  margin-top: 50px;
+ text-align: center;
   font-weight: bold;
-  font-size: 2.9rem;
-  font-family: var(--text-sub-heading);
-  color: var(--text-color-1);
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  margin-top: 40px;
+  color: #253657;
 
 }
   
 .machnical-container {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   gap: 20px;
 }
 
 .img-machanical {
-  width: 100%;
-  height: 700px;
+  width: 550px;
+  height: 450px;
   object-fit: cover;
-  border-radius: 18px 24px;
-  margin-left: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px #ffb627;
+  border: none;
+  margin:25px
 }
 
 .mechanical-p {
-margin-left: 10px;
-  line-height: 1.4;
-  
-  font-family: var(--text-pragraph);
-  font-size: 34px;
-  
-  color: #142850;
-  margin-top: 40px;
-  margin-right: 10px;
+ font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  color: rgb(42, 40, 40);
+  margin-top: 50px;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  margin-left: 20px;
 }
 
 .machanical-learn-cont{
   display: grid;
   gap: 55px;
-  grid-template-columns: repeat(4, 2fr);
+  grid-template-columns: repeat(4, 1fr);
   margin: 30px;
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
   margin-bottom: 30px;
   
@@ -1411,22 +1400,13 @@ font-family: var(--text-sub-heading);
 
 
 /* deparment of electical enginering */
-.header-electrical{
-  background-color: var(--footer-background-color);
-  color: var(--text-color-2);
-  text-align: center;
-  padding: 30px 40px;
-  font-size: 3rem;
-  font-weight: bold;
-  font-family: var(--text-header)
-}
+
 .sub-electrical{
   text-align: center;
-  margin: 30px;
-  padding: 50px;
+
   margin-top: 50px;
   font-weight: bold;
-  font-size: 2.9rem;
+  font-size: 2.4rem;
   font-family: var(--text-sub-heading);
   color: var(--text-color-1);
 
@@ -1439,28 +1419,27 @@ font-family: var(--text-sub-heading);
   align-items: stretch;
 }
 .img-electrical{
-  width: 800px;
-  height: 700px;
+  width: 550px;
+  height: 450px;
   object-fit: cover;
-  border-radius: 18px;
-  margin-left: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px #ffb627;
+  border: none;
+  margin:25px
 }
 .electrical-p{
-  margin-left: 10px;
-  line-height: 1.4;
-  
-  font-family: var(--text-pragraph);
-  font-size: 34px;
-  
-  color: #142850;
-  margin-top: 40px;
-  margin-right: 10px;
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  color: rgb(42, 40, 40);
+  margin-top: 50px;
+  line-height: 1.6;
+  letter-spacing: 1px;
 }
 
 .electrical-learn-cont{
   display: grid;
-  gap: 55px;
-  grid-template-columns: repeat(4, 2fr);
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
   margin: 30px;
   width: 60%;
   margin: 0 auto;
