@@ -62,7 +62,7 @@ body {
 
 #anchor2 {
   text-decoration: none;
-  color: inherit;
+  color: var(-);
 }
 
 
@@ -250,6 +250,7 @@ section {
     text-align: center;
     flex: 1 1 140px;
   color:white;
+
   }
 
   .fact strong {
@@ -387,9 +388,11 @@ section {
 
 .text-paragphy {
   margin: 0 30px;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   font-family: var(--font-family-paragraphs);
   text-align: left;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
 }
 
 .about-container {
@@ -428,7 +431,8 @@ section {
   padding: 20px;
   border-radius: 10px;
   color: var(--text-color-2);
-  
+  line-height: 1.2;
+  letter-spacing: 1.2px;
   width: 300px;
   height: 330px;
 }
@@ -511,9 +515,11 @@ section {
 }
 .text-paragphy-membership {
   margin: 0 30px;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   font-family: var(--font-family-paragraphs);
   text-align: left;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
   width: 100%;
   max-width: 800px;
   margin-top: 30px;
@@ -559,8 +565,9 @@ section {
   margin: 20px 30px;
   font-size: 1.1rem;
   font-family: var(--font-family-paragraphs);
-
+line-height: 1.5;
   list-style-type: square;
+  letter-spacing: 1.5px;
 }
 
 .text-paragphg-global {
@@ -568,6 +575,9 @@ section {
   width: 600px;
   height: 20px;
   margin: 20px 20px;
+  line-height: 1.5;
+  font-size: 0.9rem;
+  letter-spacing: 1.5px;
 }
 hr {
   background-color: var(--button-background-color);
@@ -629,9 +639,11 @@ hr {
 }
 .stratagetic-goals-content {
   margin: 20px 10px;
-  font-size: 1.2rem;
+ font-size: 0.9;
   font-family: var(--font-family-paragraphs);
   text-align: left;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
 }
 .stratagetic-continer {
   display: grid;
@@ -664,13 +676,13 @@ background-color: var(--secondary-background-color);
 }
 .stratagetic-goals-paragraph{
   font-family: var(--font-family-paragraphs);
-  font-size: 1.2rem;
+ line-height: 1.5;
   color: var(--text-color-2);
  
 }
 .about--links{
   display:grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 3fr);
   gap: 20px;
   margin-top: 30px;
   margin-bottom: 20px;
@@ -1288,7 +1300,7 @@ textarea {
 
 }
 
-.card-body button:hover {
+.link-learn:hover {
   background-color: var(--footer-background-color);
   color: var(--button-background-color);
 }
