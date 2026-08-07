@@ -9,7 +9,6 @@ background-color: var(--main-background-color); */
 /*qeybtan nav*/
 /*qeybtan home*/
 /*qeybtan  About us*/
-/* <<<<<<< HEAD */
 :root {
   --main-background-color: #fff9f0;
   --secondary-background-color: #1f3a6e;
@@ -32,8 +31,321 @@ background-color: var(--main-background-color); */
 }
 
 body {
-  background-color: var(--main-background-color);
+  background: white;
 }
+.logo{
+  width: 110px;
+  height: 100px;
+  object-fit: cover;
+}
+.brand{
+  font-family: var(--font-family-headings);
+  color: var(--text-color-1);
+  margin-left: -15rem;
+}
+
+
+
+
+.head1,
+.head2,
+.head3
+ {
+  font-family: var(--font-family-headings);
+  color: var(--text-color-1);
+  line-height: 1.2;
+}
+.ul {
+  list-style: none;
+}
+
+
+#anchor2 {
+  text-decoration: none;
+  color: var(-);
+}
+
+
+
+
+.container {
+  width: min(1120px, 92%);
+  margin-inline: auto;
+}
+
+section {
+  padding: 5rem 0;
+}
+
+.eyebrow {
+  font-size: .78rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color:var(--text-color-1);
+  font-weight: 700;
+}
+.head1{
+  font-size:1.5rem;
+}
+
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-block;
+  padding: .9rem 1.9rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: .95rem;
+  border: 2px solid transparent;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--button-background-color));
+  color: var(--text-color-1);
+  box-shadow: 0 12px 24px rgba(255, 182, 39, .35);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 30px rgba(255, 182, 39, .45);
+}
+
+.btn-ghost {
+  border-color: var(--box-model-background-color);
+  color: var(--box-model-background-color);
+}
+
+.btn-ghost:hover {
+  background: var(--box-model-background-color);
+  color: var(--text-color-1);
+}
+
+/* ---------- Header — position:fixed + flexbox + z-index ---------- */
+#site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: var(--footer-background-color);
+  backdrop-filter: blur(30px);
+  border-bottom: 1px solid hsla(38, 100%, 58%, 0.14);
+}
+
+.nav-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.1rem 0;
+  
+
+}
+
+
+
+
+
+
+
+#main-nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+#main-nav a {
+  position: relative;
+  font-weight: 500;
+  padding: .3rem 0;
+  color: var(--text-color-2);
+}
+
+#main-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: var(--button-background-color);
+  transition: width .25s ease;
+}
+
+#main-nav a:hover::after,
+#main-nav a.active::after {
+  width: 100%;
+}
+
+
+
+  /* ---------- Hero (index) — university campus photo background ---------- */
+  #hero-section {
+    margin-top: 84px;
+    background: linear-gradient(150deg, rgba(20, 40, 80, .88), rgba(31, 58, 110, .82)),
+    url(logo.jpeg);
+    width: 100vw;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    color: var(--text-color-2);
+    position: relative;
+    overflow: hidden;
+  }
+  
+
+  #hero-section .container {
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    align-items: center;
+    gap: 3rem;
+    padding-block: 5rem;
+  }
+
+  #hero-section h1 {
+    color: var(--text-color-2);
+    font-size: clamp(2.3rem, 4.2vw, 3.4rem);
+  }
+
+  #hero-section h1 em {
+    color: var(--button-background-color);
+    font-style: normal;
+  }
+
+  #hero-section p {
+    color: var(--text-color-2);
+    margin: 1.2rem 0 2rem;
+    max-width: 46ch;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+
+
+  /* ---------- Page hero (inner pages) ---------- */
+  #page-hero h1 {
+    font-size: clamp(2rem, 4vw, 2.8rem);
+  }
+
+  #page-hero p {
+    margin-top: .6rem;
+  }
+
+  /* ---------- Facts strip ---------- */
+  .facts-strip {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+    background: var(--box-model-background-color);
+    border-radius: 22px;
+    box-shadow: 0 20px 40px rgba(20, 40, 80, 0.14);
+    padding: 2rem;
+  }
+
+  .fact {
+    text-align: center;
+    flex: 1 1 140px;
+  color:white;
+
+  }
+
+  .fact strong {
+    display: block;
+    font-family: var(--font-family-sub-headings);
+    font-size: 1.8rem;
+    color: var(--text-color-1);
+  }
+
+  .fact span {
+    color: var(--text-color-1);
+    font-size: .85rem;
+  }
+
+  /* ---------- Grids & cards ---------- */
+  .three-col-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.8rem;
+  }
+
+  .two-col-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.8rem;
+  }
+
+  .card {
+    background: var(--box-model-background-color);
+    border-radius: 12px;
+    padding: 2rem 1.6rem;
+    box-shadow: 0 8px 20px rgba(20, 40, 80, 0.08);
+    border: 1px solid rgba(20, 40, 80, .05);
+    transition: transform .25s ease, box-shadow .25s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(20, 40, 80, 0.14);
+  }
+
+  .icon-badge {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: hsla(38, 100%, 58%, 0.14);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .form-panel button:hover {
+    transform: translateY(-2px);
+  }
+
+
+  /* ---------- Footer ---------- */
+  #site-footer {
+    background: var(--footer-background-color);
+    color: var(--text-color-2);
+    padding: 3.4rem 0 1.6rem;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+    gap: 2rem;
+    padding-bottom: 2.4rem;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+  }
+
+  .footer-grid h4 {
+    color: var(--box-model-background-color);
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+
+  .footer-grid ul li {
+    margin-bottom: .6rem;
+  }
+  
+  .footer-grid ul li a:hover {
+    color: var(--button-background-color);
+  }
+
+  .footer-bottom {
+    text-align: center;
+    padding-top: 1.4rem;
+    font-size: .85rem;
+    color: var(--text-color-2);
+  }
+/* <<<<<<< HEAD */
+
 /* =======qeybta about us ================*/
 .about-us {
   margin: 20px auto;
@@ -76,9 +388,11 @@ body {
 
 .text-paragphy {
   margin: 0 30px;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   font-family: var(--font-family-paragraphs);
   text-align: left;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
 }
 
 .about-container {
@@ -117,7 +431,8 @@ body {
   padding: 20px;
   border-radius: 10px;
   color: var(--text-color-2);
-  
+  line-height: 1.2;
+  letter-spacing: 1.2px;
   width: 300px;
   height: 330px;
 }
@@ -200,9 +515,11 @@ body {
 }
 .text-paragphy-membership {
   margin: 0 30px;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   font-family: var(--font-family-paragraphs);
   text-align: left;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
   width: 100%;
   max-width: 800px;
   margin-top: 30px;
@@ -248,8 +565,9 @@ body {
   margin: 20px 30px;
   font-size: 1.1rem;
   font-family: var(--font-family-paragraphs);
-
+line-height: 1.5;
   list-style-type: square;
+  letter-spacing: 1.5px;
 }
 
 .text-paragphg-global {
@@ -257,6 +575,9 @@ body {
   width: 600px;
   height: 20px;
   margin: 20px 20px;
+  line-height: 1.5;
+  font-size: 0.9rem;
+  letter-spacing: 1.5px;
 }
 hr {
   background-color: var(--button-background-color);
@@ -318,9 +639,11 @@ hr {
 }
 .stratagetic-goals-content {
   margin: 20px 10px;
-  font-size: 1.2rem;
+ font-size: 0.9;
   font-family: var(--font-family-paragraphs);
   text-align: left;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
 }
 .stratagetic-continer {
   display: grid;
@@ -353,9 +676,44 @@ background-color: var(--secondary-background-color);
 }
 .stratagetic-goals-paragraph{
   font-family: var(--font-family-paragraphs);
-  font-size: 1.2rem;
+ line-height: 1.5;
   color: var(--text-color-2);
  
+}
+.about--links{
+  display:grid;
+  grid-template-columns: repeat(1, 3fr);
+  gap: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  text-align: center;
+}
+.about-links-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: var(--secondary-background-color);
+  box-shadow: 4px 10px 12px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  color: var(--text-color-2);
+  width: 400px;
+  height: 100px;
+}
+.about--links a {
+  text-decoration: none;
+  color: var(--text-color-2);
+  font-family: var(--font-family-sub-headings);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+a:hover {
+  color: var(--button-background-color);
+  transition: 0.3s ease;
 }
 /* styleka qeybta admissionka waaye filesha ka horeyan kan stlekoda kor kunqora kuwa kadambeyana hootisa kuqora */
 
@@ -461,7 +819,7 @@ background-color: var(--secondary-background-color);
 .ad-head {
   font-family: var(--font-family-headings);
   font-size: 2rem;
-  color: var(--text-color-1);
+  color: var(--text-color-2);
   padding: 20px;
 }
 
@@ -470,12 +828,16 @@ background-color: var(--secondary-background-color);
   gap: 30px;
   width: 900px;
   margin: 0 auto;
+ 
+}
+.admission-center-box ul{
+  list-style-type: none;
 }
 
-.admission-card {
+.admission-card  {
   width: 30rem;
   height: 23rem;
-  background-color: rgb(253, 252, 252);
+  background-color: var(--secondary-background-color);
   border-radius: 20px;
   padding: 1rem;
   box-shadow: 10px 10px 15px #e2e8f0;
@@ -486,7 +848,7 @@ background-color: var(--secondary-background-color);
   box-shadow: -10px -10px 20px #7e8694;
 }
 
-.admission-center-box ul a {
+.admission-center-box a {
   text-decoration: none;
   color: var(--text-color-1);
 }
@@ -494,8 +856,25 @@ background-color: var(--secondary-background-color);
 .admiss-buttom {
   border: none;
   font-size: 1.5rem;
-  background-color: white;
+ 
   font-weight: bold;
+  padding: 20px;
+  margin-top: ;
+  cursor: pointer;
+ 
+}
+.admiss-head{
+  font-family:var(--font-family-headings);
+  text-align: center;
+  color: var(--button-background-color);
+  margin-top: 20px;
+}
+.admis-descrip{
+  font-family: var(--font-family-paragraphs);
+  font-size: 1rem;
+  color: var(--text-color-2);
+  text-align: center;
+  margin-top: 30px;
 }
 /* ===key facts === */
 
@@ -519,15 +898,15 @@ background-color: var(--secondary-background-color);
   transition: 0.3s ease;
 }
 
-.fact:hover {
-  box-shadow: 5px 5px 10px rgba(178, 167, 167, 0.2);
-  transform: scale(1.05);
-} */
+
 /*======= programs========= */
 .faculties-fees{
   background-color: var(--main-background-color);
   margin-top: 100px;
   width: 100%;
+  color: var(--text-color-1);
+  text-transform: capitalize;
+
   
 }
 .section-head h2{
@@ -557,11 +936,12 @@ text-align: center;
   font-family: var(--font-family-headings);
   font-size: 1.2rem;
 }
-.faculty-name{
+.faculty-name td{
  
-  color: white;
+  color: var(--text-color-2);
   font-family: var(--font-family-headings);
   font-size: 1.2rem;
+  text-transform: capitalize;
 }
 
 
@@ -622,15 +1002,16 @@ text-align: center;
     display: block;
       margin: 20px auto;
   align-items: center;
-  width: 180px;
+ 
   padding: 25px 20px;
   background-color: var(--button-background-color);
   color: var(--text-color-2);
   text-decoration: none;
   font-size: 18px;
   border-radius: 50px;
-  margin-top: 20px;
+  margin-top: 60px;
   text-align: center;
+ 
 
 }
 
@@ -919,7 +1300,7 @@ textarea {
 
 }
 
-.card-body button:hover {
+.link-learn:hover {
   background-color: var(--footer-background-color);
   color: var(--button-background-color);
 }
@@ -1278,22 +1659,21 @@ textarea {
 
 /* deparment of engineering */
 .header-civil{
-  background-color: var(--footer-background-color);
-  color: var(--text-color-2);
   text-align: center;
-  padding: 30px 40px;
-  font-size: 3rem;
+  padding: 45px 35px;
+  background: linear-gradient(to left, #102753, #2b364c);
+  color: #fff9f0;
+  font-family: "Cinzel", serif;
+  font-size: 2.7rem;
   font-weight: bold;
-  font-family: var(--text-header)
 }
 .sub-civil{
-  text-align: center;
-  margin: 30px;
-  padding: 15px;
+ text-align: center;
   font-weight: bold;
-  font-size: 2.6rem;
-  font-family: var(--text-sub-heading);
-  color: var(--text-color-1);
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  margin-top: 40px;
+  color: #253657;
 
 }
 .civil-conatiner{
@@ -1303,26 +1683,26 @@ textarea {
   align-items: stretch;
 }
 .img-civil{
-  width: 800px;
-  height:600px;
+  width: 450px;
+  height: 350px;
   object-fit: cover;
-  border-radius: 18px;
-  margin-left: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px #ffb627;
+  border: none;
+  margin:25px
 }
 .civil-p{
-  margin-left: 10px;
-  line-height: 1.4;
-  
-  font-family: var(--text-pragraph);
-  font-size: 29px;
-  color: var(--text-color-1);
-  margin-top: 30px;
-  margin-right: 0px;
+ font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  color: rgb(42, 40, 40);
+  margin-top: 50px;
+  line-height: 1.6;
+  letter-spacing: 1px;
 }
 .civil-learn-cont{
   display: grid;
-  gap: 55px;
-  grid-template-columns: repeat(4, 2fr);
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
   margin: 30px;
   width: 60%;
   margin: 0 auto;
@@ -1340,60 +1720,50 @@ font-family: var(--text-sub-heading);
 }
 
 /* deparment of  machinacal engineerin */
-.header-machanical{
-  background-color:var(--secondary-background-color);
-  color: var(--text-color-2);
-  text-align: center;
-  padding: 30px 40px;
-  font-size: 3rem;
-  font-weight: bold;
-  font-family: var(--text-header)
-}
+
 .sub-machanical{
-  text-align: center;
-  margin: 30px;
-  padding: 50px;
-  margin-top: 50px;
+ text-align: center;
   font-weight: bold;
-  font-size: 2.9rem;
-  font-family: var(--text-sub-heading);
-  color: var(--text-color-1);
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  margin-top: 40px;
+  color: #253657;
 
 }
   
 .machnical-container {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   gap: 20px;
 }
 
 .img-machanical {
-  width: 100%;
-  height: 700px;
+  width: 550px;
+  height: 450px;
   object-fit: cover;
-  border-radius: 18px 24px;
-  margin-left: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px #ffb627;
+  border: none;
+  margin:25px
 }
 
 .mechanical-p {
-margin-left: 10px;
-  line-height: 1.4;
-  
-  font-family: var(--text-pragraph);
-  font-size: 34px;
-  
-  color: #142850;
-  margin-top: 40px;
-  margin-right: 10px;
+ font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  color: rgb(42, 40, 40);
+  margin-top: 50px;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  margin-left: 20px;
 }
 
 .machanical-learn-cont{
   display: grid;
   gap: 55px;
-  grid-template-columns: repeat(4, 2fr);
+  grid-template-columns: repeat(4, 1fr);
   margin: 30px;
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
   margin-bottom: 30px;
   
@@ -1411,22 +1781,13 @@ font-family: var(--text-sub-heading);
 
 
 /* deparment of electical enginering */
-.header-electrical{
-  background-color: var(--footer-background-color);
-  color: var(--text-color-2);
-  text-align: center;
-  padding: 30px 40px;
-  font-size: 3rem;
-  font-weight: bold;
-  font-family: var(--text-header)
-}
+
 .sub-electrical{
   text-align: center;
-  margin: 30px;
-  padding: 50px;
+
   margin-top: 50px;
   font-weight: bold;
-  font-size: 2.9rem;
+  font-size: 2.4rem;
   font-family: var(--text-sub-heading);
   color: var(--text-color-1);
 
@@ -1439,28 +1800,27 @@ font-family: var(--text-sub-heading);
   align-items: stretch;
 }
 .img-electrical{
-  width: 800px;
-  height: 700px;
+  width: 550px;
+  height: 450px;
   object-fit: cover;
-  border-radius: 18px;
-  margin-left: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px #ffb627;
+  border: none;
+  margin:25px
 }
 .electrical-p{
-  margin-left: 10px;
-  line-height: 1.4;
-  
-  font-family: var(--text-pragraph);
-  font-size: 34px;
-  
-  color: #142850;
-  margin-top: 40px;
-  margin-right: 10px;
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  color: rgb(42, 40, 40);
+  margin-top: 50px;
+  line-height: 1.6;
+  letter-spacing: 1px;
 }
 
 .electrical-learn-cont{
   display: grid;
-  gap: 55px;
-  grid-template-columns: repeat(4, 2fr);
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
   margin: 30px;
   width: 60%;
   margin: 0 auto;
@@ -1585,7 +1945,7 @@ th:nth-child(2) {
 td:nth-child(even) {
   background-color: #ffb627;
 }
-td:nth-child(odd) {
+.td-busines:nth-child(odd) {
   background-color: var(--footer-background-color);
   color: var(--button-background-color);
 }
