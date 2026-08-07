@@ -41,7 +41,7 @@ body {
 .brand{
   font-family: var(--font-family-headings);
   color: var(--text-color-1);
-  margin-left: -15rem;
+  /* margin-left: -15rem; */
 }
 
 
@@ -62,7 +62,7 @@ body {
 
 #anchor2 {
   text-decoration: none;
-  color: var(-);
+  color: inherit;
 }
 
 
@@ -250,7 +250,6 @@ section {
     text-align: center;
     flex: 1 1 140px;
   color:white;
-
   }
 
   .fact strong {
@@ -385,11 +384,9 @@ section {
 
 .text-paragphy {
   margin: 0 30px;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   font-family: var(--font-family-paragraphs);
   text-align: left;
-  line-height: 1.5;
-  letter-spacing: 1.5px;
 }
 
 .about-container {
@@ -428,8 +425,7 @@ section {
   padding: 20px;
   border-radius: 10px;
   color: var(--text-color-2);
-  line-height: 1.2;
-  letter-spacing: 1.2px;
+  
   width: 300px;
   height: 330px;
 }
@@ -512,11 +508,9 @@ section {
 }
 .text-paragphy-membership {
   margin: 0 30px;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   font-family: var(--font-family-paragraphs);
   text-align: left;
-  line-height: 1.5;
-  letter-spacing: 1.5px;
   width: 100%;
   max-width: 800px;
   margin-top: 30px;
@@ -558,9 +552,8 @@ section {
   margin: 20px 30px;
   font-size: 1.1rem;
   font-family: var(--font-family-paragraphs);
-line-height: 1.5;
+
   list-style-type: square;
-  letter-spacing: 1.5px;
 }
 
 .text-paragphg-global {
@@ -568,9 +561,6 @@ line-height: 1.5;
   width: 600px;
   height: 20px;
   margin: 20px 20px;
-  line-height: 1.5;
-  font-size: 0.9rem;
-  letter-spacing: 1.5px;
 }
 hr {
   background-color: var(--button-background-color);
@@ -627,11 +617,9 @@ hr {
 }
 .stratagetic-goals-content {
   margin: 20px 10px;
- font-size: 0.9;
+  font-size: 1.2rem;
   font-family: var(--font-family-paragraphs);
   text-align: left;
-  line-height: 1.5;
-  letter-spacing: 1.5px;
 }
 .stratagetic-continer {
   display: grid;
@@ -664,7 +652,7 @@ background-color: var(--secondary-background-color);
 }
 .stratagetic-goals-paragraph{
   font-family: var(--font-family-paragraphs);
- line-height: 1.5;
+  font-size: 1.2rem;
   color: var(--text-color-2);
  
 }
@@ -808,7 +796,7 @@ a:hover {
 .ad-head {
   font-family: var(--font-family-headings);
   font-size: 2rem;
-  color: var(--text-color-2);
+  color: var(--text-color-1);
   padding: 20px;
 }
 
@@ -817,16 +805,12 @@ a:hover {
   gap: 30px;
   width: 900px;
   margin: 0 auto;
- 
-}
-.admission-center-box ul{
-  list-style-type: none;
 }
 
-.admission-card  {
+.admission-card {
   width: 30rem;
   height: 23rem;
-  background-color: var(--secondary-background-color);
+  background-color: rgb(253, 252, 252);
   border-radius: 20px;
   padding: 1rem;
   box-shadow: 10px 10px 15px #e2e8f0;
@@ -837,7 +821,7 @@ a:hover {
   box-shadow: -10px -10px 20px #7e8694;
 }
 
-.admission-center-box a {
+.admission-center-box ul a {
   text-decoration: none;
   color: var(--text-color-1);
 }
@@ -845,25 +829,8 @@ a:hover {
 .admiss-buttom {
   border: none;
   font-size: 1.5rem;
- 
+  background-color: white;
   font-weight: bold;
-  padding: 20px;
-  margin-top: ;
-  cursor: pointer;
- 
-}
-.admiss-head{
-  font-family:var(--font-family-headings);
-  text-align: center;
-  color: var(--button-background-color);
-  margin-top: 20px;
-}
-.admis-descrip{
-  font-family: var(--font-family-paragraphs);
-  font-size: 1rem;
-  color: var(--text-color-2);
-  text-align: center;
-  margin-top: 30px;
 }
 /* ===key facts === */
 
@@ -887,15 +854,15 @@ a:hover {
   transition: 0.3s ease;
 }
 
-
+.fact:hover {
+  box-shadow: 5px 5px 10px rgba(178, 167, 167, 0.2);
+  transform: scale(1.05);
+} */
 /*======= programs========= */
 .faculties-fees{
   background-color: var(--main-background-color);
   margin-top: 100px;
   width: 100%;
-  color: var(--text-color-1);
-  text-transform: capitalize;
-
   
 }
 .section-head h2{
@@ -925,12 +892,11 @@ text-align: center;
   font-family: var(--font-family-headings);
   font-size: 1.2rem;
 }
-.faculty-name td{
+.faculty-name{
  
-  color: var(--text-color-2);
+  color: white;
   font-family: var(--font-family-headings);
   font-size: 1.2rem;
-  text-transform: capitalize;
 }
 
 
@@ -991,16 +957,15 @@ text-align: center;
     display: block;
       margin: 20px auto;
   align-items: center;
- 
+  width: 180px;
   padding: 25px 20px;
   background-color: var(--button-background-color);
   color: var(--text-color-2);
   text-decoration: none;
   font-size: 18px;
   border-radius: 50px;
-  margin-top: 60px;
+  margin-top: 20px;
   text-align: center;
- 
 
 }
 
@@ -1289,7 +1254,7 @@ textarea {
 
 }
 
-.link-learn:hover {
+.card-body button:hover {
   background-color: var(--footer-background-color);
   color: var(--button-background-color);
 }
@@ -1648,7 +1613,9 @@ textarea {
 
 /* deparment of engineering */
 .header-civil{
+
   text-align: center;
+  margin-top: 100px;
   padding: 45px 35px;
   background: linear-gradient(to left, #102753, #2b364c);
   color: #fff9f0;
@@ -1728,8 +1695,8 @@ font-family: var(--text-sub-heading);
 }
 
 .img-machanical {
-  width: 550px;
-  height: 450px;
+  width: 450px;
+  height: 350px;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0px 2px 6px #ffb627;
@@ -1786,11 +1753,11 @@ font-family: var(--text-sub-heading);
   display: flex;
   gap: 20px;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: center;
 }
 .img-electrical{
-  width: 550px;
-  height: 450px;
+  width: 470px;
+  height: 360px;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0px 2px 6px #ffb627;
@@ -1799,11 +1766,12 @@ font-family: var(--text-sub-heading);
 }
 .electrical-p{
   font-family: "Inter", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: rgb(42, 40, 40);
   margin-top: 50px;
-  line-height: 1.6;
+  line-height: 1.4;
   letter-spacing: 1px;
+  margin-left: 20px;
 }
 
 .electrical-learn-cont{
@@ -1913,32 +1881,31 @@ font-family: var(--text-sub-heading);
   margin-top: 40px;
   color: #253657;
 }
-table {
+.table-of-carer-choosedepartment {
   margin: 30px 20px;
   border-collapse: collapse;
 }
-th,
+.table-title,
 td {
   border: 2px solid #1f3a6e;
   padding: 12px;
 }
-th:nth-child(1) {
+.table-title:nth-child(1) {
   background-color: #ffb627;
   color: #1f3a6e;
 }
-th:nth-child(2) {
+.table-title:nth-child(2) {
   background-color: #142850;
   color: #ffb627;
 }
 
-td:nth-child(even) {
+.table-cells:nth-child(even) {
   background-color: #ffb627;
 }
-.td-busines:nth-child(odd) {
+.table-cell:nth-child(odd) {
   background-color: var(--footer-background-color);
   color: var(--button-background-color);
 }
-
 .fc-Department-of-Finance-container {
   display: flex;
   gap: 15px;
