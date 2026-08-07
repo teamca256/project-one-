@@ -10,7 +10,7 @@ background-color: var(--main-background-color); */
 /*qeybtan home*/
 /*qeybtan  About us*/
 :root {
-  --main-background-color: #fff9f0;
+  --main-background-color:#fff;
   --secondary-background-color: #1f3a6e;
   --button-background-color: #ffb627;
   --text-color-1: #1f3a6e;
@@ -425,7 +425,7 @@ section {
   color: var(--text-color-2);
   
   width: 300px;
-  height: 330px;
+  height: 370px;
 }
 
 .mision-list {
@@ -503,6 +503,7 @@ section {
 .membership-and-patterns {
   margin: 0 auto;
   max-width: 100%;
+ 
 }
 .text-paragphy-membership {
   margin: 0 30px;
@@ -511,8 +512,10 @@ section {
   text-align: left;
   width: 100%;
   max-width: 800px;
+  
   margin-top: 30px;
   display: flex;
+
 }
 
 .membership-title {
@@ -522,7 +525,8 @@ section {
   text-align: center;
   color: var(--text-color-2);
   padding: 30px;
-  margin: auto;
+  
+  margin-bottom: 20px;
   font-family: var(--font-family-headings);
 }
 
@@ -662,6 +666,7 @@ background-color: var(--secondary-background-color);
   margin-bottom: 20px;
   margin-left: 20px;
   text-align: center;
+  padding:60px;
   
 }
 .about-links-card {
@@ -671,7 +676,7 @@ background-color: var(--secondary-background-color);
   overflow: hidden;
 background-color: var(--main-background-color);
 box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.1);
-  padding: 30px;
+  padding: 20px;
  
   border-radius: 10px;
   color: var(--text-color-1);
@@ -685,6 +690,7 @@ box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.1);
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
+ 
 }
 a:hover {
   color: var(--button-background-color);
@@ -1209,7 +1215,7 @@ textarea {
 }
 
 .card-body {
-  padding: 20px;
+  
   display: flex;
   flex-direction: column;
   flex-grow: 1;
