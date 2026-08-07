@@ -3,14 +3,13 @@ markad isticmaleyso sidan u isticmalee
 background-color: var(--main-background-color); */
 /* sida ay ukala horeeyan usoo gale marka css qoreysid adiga xogta qeybaha kala u gudbeynin*/
 
-
 /* qeybtan body*/
 /*qeybtah headers*/
 /*qeybtan nav*/
 /*qeybtan home*/
 /*qeybtan  About us*/
 :root {
-  --main-background-color:#fff;
+  --main-background-color: #fff;
   --secondary-background-color: #1f3a6e;
   --button-background-color: #ffb627;
   --text-color-1: #1f3a6e;
@@ -40,8 +39,7 @@ body {
 }
 .head1,
 .head2,
-.head3
- {
+.head3 {
   font-family: var(--font-family-headings);
   color: var(--text-color-1);
   line-height: 1.2;
@@ -58,7 +56,7 @@ body {
   left: 0;
   right: 0;
   z-index: 100;
-  background:rgba(255, 182, 39, 0.6);
+  background: rgba(255, 182, 39, 0.6);
   backdrop-filter: blur(50px);
   border-bottom: 1px solid hsla(38, 100%, 58%, 0.14);
 }
@@ -68,8 +66,6 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 1.1rem 0;
-  
-
 }
 
 .logo-name {
@@ -78,14 +74,12 @@ body {
   margin-left: -18rem;
 }
 
-
 .logo {
   width: 80px;
   height: 80px;
   border-radius: 50%;
   object-fit: cover;
 }
-
 
 #main-nav ul {
   display: flex;
@@ -95,7 +89,7 @@ body {
 #main-nav a {
   position: relative;
   font-weight: 500;
-  padding: .3rem 0;
+  padding: 0.3rem 0;
 }
 
 #main-nav a::after {
@@ -106,7 +100,7 @@ body {
   width: 0;
   height: 2px;
   background: var(--secondary-background-color);
-  transition: width .25s ease;
+  transition: width 0.25s ease;
 }
 
 #main-nav a:hover::after,
@@ -114,69 +108,71 @@ body {
   width: 100%;
 }
 
-  /* ---------- Hero (index) — university campus photo background ---------- */
-  #hero-section {
-    margin-top: 7rem;
-    background: linear-gradient(150deg, rgba(20, 40, 80, .88), rgba(31, 58, 110, .82)),
+/* ---------- Hero (index) — university campus photo background ---------- */
+#hero-section {
+  margin-top: 7rem;
+  background:
+    linear-gradient(150deg, rgba(20, 40, 80, 0.88), rgba(31, 58, 110, 0.82)),
     url(logo.jpeg);
-    background-size: cover;
-    background-position: center;
-    color: var(--text-color-2);
-    position: relative;
-    overflow: hidden;
-    background-attachment: fixed;
-  }
-  
+  background-size: cover;
+  background-position: center;
+  color: var(--text-color-2);
+  position: relative;
+  overflow: hidden;
+  background-attachment: fixed;
+}
 
-  #hero-section .container {
-    display: grid;
-    grid-template-columns: 1.1fr .9fr;
-    align-items: center;
-    gap: 3rem;
-    padding-block: 5rem;
-  }
+#hero-section .container {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 3rem;
+  padding-block: 5rem;
+}
 
-  #hero-section h1 {
-    color: var(--text-color-2);
-    font-size: clamp(2.3rem, 4.2vw, 3.4rem);
-  }
+#hero-section h1 {
+  color: var(--text-color-2);
+  font-size: clamp(2.3rem, 4.2vw, 3.4rem);
+}
 
-  #hero-section h1 em {
-    color: var(--button-background-color);
-    font-style: normal;
-  }
+#hero-section h1 em {
+  color: var(--button-background-color);
+  font-style: normal;
+}
 
-  #hero-section p {
-    color: var(--text-color-2);
-    margin: 1.2rem 0 2rem;
-    max-width: 46ch;
-  }
+#hero-section p {
+  color: var(--text-color-2);
+  margin: 1.2rem 0 2rem;
+  max-width: 46ch;
+}
 
-  .hero-actions {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-  /* ---------- Buttons ---------- */
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+/* ---------- Buttons ---------- */
 .btn {
   display: inline-block;
-  padding: .9rem 1.9rem;
+  padding: 0.9rem 1.9rem;
   border-radius: 999px;
   font-weight: 700;
-  font-size: .95rem;
+  font-size: 0.95rem;
   border: 2px solid transparent;
-  transition: transform .25s ease, box-shadow .25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .btn-primary {
   background: linear-gradient(135deg, var(--button-background-color));
   color: var(--text-color-1);
-  box-shadow: 0 12px 24px rgba(255, 182, 39, .35);
+  box-shadow: 0 12px 24px rgba(255, 182, 39, 0.35);
 }
 
 .btn-primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 16px 30px rgba(255, 182, 39, .45);
+  box-shadow: 0 16px 30px rgba(255, 182, 39, 0.45);
 }
 
 .btn-ghost {
@@ -189,98 +185,97 @@ body {
   color: var(--text-color-1);
 }
 
-
-
 #anchor2 {
   text-decoration: none;
   color: inherit;
 }
 
- /* ---------- Facts strip ---------- */
-  .facts-items {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 1.4rem;
-    background: var(--box-model-background-color);
-    border-radius: 22px;
-    box-shadow: 0 20px 40px rgba(20, 40, 80, 0.14);
-    padding: 2rem;
-  }
+/* ---------- Facts strip ---------- */
+.facts-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.4rem;
+  background: var(--box-model-background-color);
+  border-radius: 22px;
+  box-shadow: 0 20px 40px rgba(20, 40, 80, 0.14);
+  padding: 2rem;
+}
 
-  .fact-information {
-    text-align: center;
-    flex: 1 1 140px;
-  }
+.fact-information {
+  text-align: center;
+  flex: 1 1 140px;
+}
 
-  .facts-numbers {
-    display: block;
-    font-family: var(--font-family-sub-headings);
-    font-size: 1.8rem;
-    color: var(--text-color-1);
-  }
+.facts-numbers {
+  display: block;
+  font-family: var(--font-family-sub-headings);
+  font-size: 1.8rem;
+  color: var(--text-color-1);
+}
 .facts-letters {
-    color: var(--text-color-1);
-    font-size: .85rem;
-  }
+  color: var(--text-color-1);
+  font-size: 0.85rem;
+}
 
 /* ---------- Grids & cards ---------- */
-  .eyebrow {
+.eyebrow {
   font-size: 1rem;
-  letter-spacing: .16em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
-  color:var(--text-color-1);
+  color: var(--text-color-1);
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-top: 40px;
+  padding: 60px;
 }
 
-.desccription{
-   margin-bottom: 20px;
+.desccription {
+  margin-bottom: 20px;
 }
 
-  .three-col-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.8rem;
-  }
+.three-col-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.8rem;
+}
 
-  .two-col-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.8rem;
-  }
+.two-col-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.8rem;
+}
 
-  .card {
-    background: var(--box-model-background-color);
-    border-radius: 12px;
-    padding: 2rem 1.6rem;
-    box-shadow: 0 8px 20px rgba(20, 40, 80, 0.08);
-    border: 1px solid rgba(20, 40, 80, .05);
-    transition: transform .25s ease, box-shadow .25s ease;
-  }
+.card {
+  background: var(--box-model-background-color);
+  border-radius: 12px;
+  padding: 2rem 1.6rem;
+  box-shadow: 0 8px 20px rgba(20, 40, 80, 0.08);
+  border: 1px solid rgba(20, 40, 80, 0.05);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
 
-  .card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 20px 40px rgba(20, 40, 80, 0.14);
-  }
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(20, 40, 80, 0.14);
+}
 
-  .icon-badge {
-    width: 52px;
-    height: 52px;
-    border-radius: 50%;
-    background: hsla(38, 100%, 58%, 0.14);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
-  }
+.icon-badge {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: hsla(38, 100%, 58%, 0.14);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
 
-  .form-panel button:hover {
-    transform: translateY(-2px);
-  }
-
-
+.form-panel button:hover {
+  transform: translateY(-2px);
+}
 
 .container {
   width: min(1120px, 92%);
@@ -291,56 +286,50 @@ section {
   padding: 5rem 0;
 }
 
-
-
-
-  /* ---------- Footer ---------- */
-  #site-footer {
-    background: var(--footer-background-color);
-    color: var(--text-color-2);
-    padding: 3.4rem 0 1.6rem;
-  }
-.footer-description{
-  margin-left: -10rem;}
-.description{
+/* ---------- Footer ---------- */
+#site-footer {
+  background: var(--footer-background-color);
+  color: var(--text-color-2);
+  padding: 3.4rem 0 1.6rem;
+}
+.footer-description {
+  margin-left: -10rem;
+}
+.description {
   margin-top: 30px;
-} 
-  
+}
 
-  .footer-grid {
-    display: grid;
-    grid-template-columns: 1.4fr 1fr 1fr 1fr 1.4fr;
-    gap: 2rem;
-    padding-bottom: 2.4rem;
-    border-bottom: 1px solid rgba(255, 255, 255, .1);
-  }
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr 1.4fr;
+  gap: 2rem;
+  padding-bottom: 2.4rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
 
+.footer-grid h4 {
+  color: var(--box-model-background-color);
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.description {
+  margin-bottom: 30px;
+}
 
-  .footer-grid h4 {
-    color: var(--box-model-background-color);
-    margin-bottom: 1rem;
-    font-size: 1rem;
-  }
-  .description{
-    margin-bottom: 30px;
+.footer-grid ul li {
+  margin-bottom: 0.6rem;
+}
 
-  
-  }
+.footer-grid ul li a:hover {
+  color: var(--button-background-color);
+}
 
-  .footer-grid ul li {
-    margin-bottom: .6rem;
-  }
-  
-  .footer-grid ul li a:hover {
-    color: var(--button-background-color);
-  }
-
-  .footer-bottom {
-    text-align: center;
-    padding-top: 1.4rem;
-    font-size: .85rem;
-    color: var(--text-color-2);
-  }
+.footer-bottom {
+  text-align: center;
+  padding-top: 1.4rem;
+  font-size: 0.85rem;
+  color: var(--text-color-2);
+}
 /* <<<<<<< HEAD */
 
 /* =======qeybta about us ================*/
@@ -355,7 +344,7 @@ section {
   height: 100px;
   text-align: center;
   color: var(--text-color-2);
- padding: 30px;
+  padding: 30px;
   margin: auto;
   font-family: var(--font-family-headings);
 }
@@ -412,7 +401,6 @@ section {
   font-size: 1, 5rem;
   color: var(--text-color-2);
   margin: 20px;
-
 }
 
 .about-vision,
@@ -423,7 +411,7 @@ section {
   padding: 20px;
   border-radius: 10px;
   color: var(--text-color-2);
-  
+
   width: 300px;
   height: 370px;
 }
@@ -503,7 +491,6 @@ section {
 .membership-and-patterns {
   margin: 0 auto;
   max-width: 100%;
- 
 }
 .text-paragphy-membership {
   margin: 0 30px;
@@ -512,10 +499,9 @@ section {
   text-align: left;
   width: 100%;
   max-width: 800px;
-  
+
   margin-top: 30px;
   display: flex;
-
 }
 
 .membership-title {
@@ -525,7 +511,7 @@ section {
   text-align: center;
   color: var(--text-color-2);
   padding: 30px;
-  
+
   margin-bottom: 20px;
   font-family: var(--font-family-headings);
 }
@@ -582,9 +568,8 @@ section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
- 
+
   padding: 30px;
-  
 }
 .membership-card {
   display: flex;
@@ -593,7 +578,7 @@ section {
   justify-content: center;
   align-items: stretch;
   gap: 40px;
-  
+
   border: solid var(--secondary-background-color);
   margin: 10px;
   padding: 10px;
@@ -608,7 +593,7 @@ section {
 }
 /*qeybta sStrategic Goals*/
 .title-stratagetic {
- background: var(--secondary-background-color);
+  background: var(--secondary-background-color);
   width: 100%;
   height: 100px;
   text-align: center;
@@ -637,7 +622,7 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   align-items: stretch;
-background-color: var(--secondary-background-color);
+  background-color: var(--secondary-background-color);
   gap: 40px;
   border: none;
   margin: 10px;
@@ -652,32 +637,30 @@ background-color: var(--secondary-background-color);
   text-align: left;
   font-weight: bold;
 }
-.stratagetic-goals-paragraph{
+.stratagetic-goals-paragraph {
   font-family: var(--font-family-paragraphs);
   font-size: 1.2rem;
   color: var(--text-color-2);
- 
 }
-.about--links{
+.about--links {
   display: grid;
-  grid-template-columns: repeat(3,3fr);
+  grid-template-columns: repeat(3, 3fr);
   gap: 20px;
   margin-top: 200px;
   margin-bottom: 20px;
   margin-left: 20px;
   text-align: center;
-  padding:60px;
-  
+  padding: 60px;
 }
 .about-links-card {
   display: flex;
   justify-content: center;
   flex-direction: row;
   overflow: hidden;
-background-color: var(--main-background-color);
-box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.1);
+  background-color: var(--main-background-color);
+  box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.1);
   padding: 20px;
- 
+
   border-radius: 10px;
   color: var(--text-color-1);
   width: 300px;
@@ -690,7 +673,6 @@ box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.1);
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
- 
 }
 a:hover {
   color: var(--button-background-color);
@@ -700,416 +682,474 @@ a:hover {
 
 /* ====Admissionka==== */
 
-.admiss-body{
-  background-color: var(--main-background-color);
-}
-
-
-
-
-
-
 /* home ama hero  */
 
-.hero {
+.admision-hero {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--box-model-background-color);
-  background-size: cover;
-  background-position: center;
-  color: var(--text-color-1);
   text-align: center;
   padding: 120px 20px;
+  color: var(--text-color-2);
+
+  background:
+    linear-gradient(
+      rgba(var(--secondary-background-rgb), 0.75),
+      rgba(var(--secondary-background-rgb), 0.75)
+    ),
+    url("images/admission.jpg");
+
+  background-size: cover;
+  background-position: center;
   background-attachment: fixed;
 }
 
-.eye {
-  margin: 0 auto;
-  text-align: center;
+.admision-hero .admision-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.adimision-pharaphy {
   font-size: 20px;
   color: var(--button-background-color);
-  padding-bottom: 10px;
-  text-decoration: underline;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: var(--font-family-sub-headings);
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 35px;
 }
 
-.eyebrow {
-  margin: 0 auto;
-  text-align: center;
-  font-size: 30px;
-  color: var(--button-background-color);
-  padding-bottom: 10px;
-  text-decoration: underline;
-}
-
-.hero h1 {
-  font-size: 50px;
+.admision-hero h1 {
+  font-family: var(--font-family-headings);
+  font-size: 3.2rem;
   margin-bottom: 20px;
 }
 
-.sub {
-  font-size: 20px;
-  margin-bottom: 30px;
-}
+/* ================= BUTTON ================= */
 
-.btn {
+.admission-btn,
+.admission-button {
+  display: inline-block;
+  padding: 15px 35px;
+
   background-color: var(--button-background-color);
-  color: var(--text-color-2);
-  padding: 10px 20px;
+  color: var(--text-color-1);
+
   text-decoration: none;
-  font-size: 18px;
   border-radius: 50px;
-}
 
-.btn:hover {
-  box-shadow: 5px 10px 20px #333;
-  background-color: var(--text-color-1);
-  color: var(--text-color-2);
-}
-.admission-center {
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  background-color: white;
-  padding: 20px;
-
-
-}
-
-.ad-head {
-  font-family: var(--font-family-headings);
-  font-size: 2rem;
-  color: var(--text-color-1);
-  padding: 20px;
-}
-
-.admission-center-box ul {
-  display: flex;
-  gap: 30px;
-  width: 900px;
-  margin: 0 auto;
-}
-
-.admission-card {
-  width: 30rem;
-  height: 23rem;
-  background-color: rgb(253, 252, 252);
-  border-radius: 20px;
-  padding: 1rem;
-  box-shadow: 10px 10px 15px #e2e8f0;
-  margin-top: 20px;
-}
-
-.admission-card:hover {
-  box-shadow: -10px -10px 20px #7e8694;
-}
-
-.admission-center-box ul a {
-  text-decoration: none;
-  color: var(--text-color-1);
-}
-
-.admiss-buttom {
-  border: none;
-  font-size: 1.5rem;
-  background-color: white;
+  font-family: var(--font-family-sub-headings);
   font-weight: bold;
-}
-/* ===key facts === */
 
-.facts-strip {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  gap: 30px;
-  background-color: var(--secondary-background-color);
-  padding: 20px;
-  margin: 50px 0px;
-  color: var(--text-color-2);
-}
-
-*.fact {
-  text-align: center;
-  padding: 40px;
-  background-color: var(--box-model-background-color);
-  border-radius: 10px;
   transition: 0.3s ease;
 }
 
-.fact:hover {
-  box-shadow: 5px 5px 10px rgba(178, 167, 167, 0.2);
-  transform: scale(1.05);
-} */
-/*======= programs========= */
-.faculties-fees{
-  background-color: var(--main-background-color);
-  margin-top: 100px;
-  width: 100%;
-  
-}
-.section-head h2{
-padding: 20px;
-font-family: var(--font-family-headings);
-font-size: 1.5rem;
-color: var(--text-color-1);
-text-align: center;
-}
-.section-head p{
-  
-  font-family: var(--font-family-paragraphs);
-  font-size: 1rem;
-  color: var(--secondary-background-color);
-  text-align: center;
-
-}
-.faculties-table{
-  width: 100%;
-  max-width: 1100px;
-  margin-left: 70px ;
-  background-color: var(--main-background-color);
-  border-collapse: collapse;
-  color: var(--text-color-1);
-  margin-top: 20px;
-
-}
-.table-program-header{
-  color: var(--text-color-1);
-  font-family: var(--font-family-headings);
-  font-size: 1.5rem;
-  background-color: var(--button-background-color);
-}
-.faculty-name{
- 
-  color: var(--text-color-1);
-  font-family: var(--font-family-headings);
-  font-size: 1.3rem;
-  text-transform: uppercase;
-}
-.program-info:nth-child(odd) {
-  background-color: var(--secondary-background-color);
+.admission-btn:hover,
+.admission-button:hover {
+  background-color: var(--text-color-1);
   color: var(--text-color-2);
-  
+
+  box-shadow: 0 10px 20px rgba(var(--secondary-background-rgb), 0.3);
+
+  transform: translateY(-3px);
 }
-.ad-head{
-  font-family: var(--font-family-headings);
-  font-size: 2rem;
-  color: var(--text-color-1);
-  padding: 20px;
+
+/* ================= REQUIREMENTS ================= */
+
+.requirements {
+  padding: 80px 20px;
+
+  background-color: var(--main-background-color);
+
   text-align: center;
 }
 
+.title-requirements {
+  color: var(--button-background-color);
 
+  font-family: var(--font-family-sub-headings);
 
-/* =====requirements===== */
-.requirements {
-  margin: 100px 20px;
-  padding: 15px;
-  border-radius: 10px;
+  font-size: 20px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 2px;
 }
+
+.add-requ-title {
+  color: var(--text-color-1);
+
+  font-family: var(--font-family-headings);
+
+  font-size: 2.5rem;
+}
+
+.add-requi-descrip {
+  color: var(--text-color-1);
+
+  font-family: var(--font-family-paragraphs);
+
+  opacity: 0.75;
+}
+
+/* ================= CARDS ================= */
 
 .requirement-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  height: 200px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
   gap: 20px;
-  margin-top: 10px;
-}
-.add-requ-title{
-  text-align: center;
-  font-family: var(--font-family-headings);
-  font-size: 2rem;
-  color: var(--text-color-1);
-  margin-bottom: 20px;
-}
-.add-requi-descrip{
-  text-align: center;
-  font-family: var(--font-family-paragraphs);
-  font-size: 1rem;
-  color: var(--secondary-background-color);
-}
-.requirement-container{
-  
-  text-align: center;
-  color: var(--text-color-1);
 }
 
 .requirement-card {
-  background-color: var(--secondary-background-color);
-  padding: 20px;
-  margin: 20px;
-  border-radius: 10px;
-  text-align: center;
+  background-color: var(--main-background-color);
+  padding: 30px 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 18px rgba(var(--secondary-background-rgb), 0.15);
   transition: 0.3s ease;
-  padding: 50px 0px;
-  text-align: center;
-  color: var(--text-color-2);
 }
-
 .requirement-card:hover {
-  box-shadow: 5px 5px 10px rgba(178, 167, 167, 0.2);
-  transform: scale(1.05);
+  transform: translateY(-8px);
 }
 
-#fee-note {
-  font-size: 25px;
-  color:var(--button-background-color);
-}
-.admiss-buttom {
-    display: block;
-      margin: 20px auto;
-  align-items: center;
-  width: 180px;
-  padding: 25px 20px;
-  background-color: var(--button-background-color);
-  color: var(--text-color-2);
-  text-decoration: none;
-  font-size: 18px;
-  border-radius: 50px;
-  margin-top: 20px;
-  text-align: center;
-
+.requirement-card h3 {
+  color: var(--button-background-color);
+  font-family: var(--font-family-headings);
 }
 
-
-/* =========Admission form part========= */
-#admission-form-section {
-  background:var(--main-background-color);
-  max-width: 100%;
-  margin-top: 100px;
-}
-.admis-form-desc{
-  text-align: center;
+.requirement-card p {
+  color: var(--text-color-1);
   font-family: var(--font-family-paragraphs);
-  font-size: 1rem;
-  color: var(--secondary-background-color);
-  margin-bottom: 20px;
+  line-height: 1.8;
+}
+.requirement-card .rque-list {
+  color: var(--text-color-1);
+  text-align: left;
+  font-family: var(--font-family-paragraphs);
+  margin: 0;
+}
+/* Fee Note */
+#fee-note {
+  color: var(--button-background-color);
   font-weight: bold;
 }
-.admiss-container {
+
+/* ================= PROGRAM FEES ================= */
+.title-admis-on {
+  margin: 120px auto 30px;
   max-width: 800px;
-  margin: 0 auto;
-  margin-top: 20px;
-  padding: 40px;
-  background-color: var(--main-background-color);
-  border-radius: 12px;
-  box-shadow: - 20px 40px rgba(15, 42, 74, 0.14);
+  color: var(--text-color-1);
+  font-family: var(--font-family-sub-headings);
 }
 
-#admission-form {
-  background: var(--secondary-background-color);
-  border-radius: 22px;
-  padding: 2.6rem;
-  box-shadow: 0 20px 40px rgba(15, 42, 74, 0.14);
-  color: var(--text-color-2);
-  margin-top: 2.6rem;
+.admission-center {
+  text-align: center;
+}
+/* ========== PROGRAM FEES ========== */
+.section-head {
+  text-align: center;
+  margin-top: 90px;
 }
 
-fieldset {
-  border: 1px solid rgba(15, 42, 74, 0.14);
-  border-radius: 12px;
-  padding: 1.6rem;
-  margin-bottom: 1.6rem;
+.section-head h2 {
+  font-family: var(--font-family-headings);
+  font-size: 2rem;
+  color: var(--text-color-1);
+  margin-bottom: 10px;
 }
 
-legend {
-  padding: 0 0.6rem;
-  font-family: Georgia, serif;
-  font-weight: 700;
+.section-head p {
+  font-family: var(--font-family-paragraphs);
+  font-size: 1rem;
   color: var(--text-color-1);
 }
 
+.faculties-fees {
+  background-color: var(--main-background-color);
+  width: 100%;
+  padding: 50px 20px;
+}
+
+.faculties-table {
+  width: 90%;
+  max-width: 1100px;
+  margin: 30px auto;
+  border-collapse: collapse;
+  background-color: var(--main-background-color);
+  color: var(--text-color-1);
+}
+
+/* Table Header */
+
+.table-program-header {
+  background-color: var(--button-background-color);
+  color: var(--text-color-1);
+  font-family: var(--font-family-headings);
+}
+
+.table-program-header th {
+  padding: 15px;
+}
+
+/* Faculty Title */
+
+.faculty-name {
+  background-color: var(--secondary-background-color);
+  color: var(--text-color-2);
+  font-family: var(--font-family-headings);
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Program Information */
+
+.program-info td {
+  padding: 12px;
+  text-align: left;
+  font-family: var(--font-family-paragraphs);
+  border-bottom: 1px solid rgba(var(--secondary-background-rgb), 0.2);
+}
+
+.program-name {
+  text-align: left;
+  padding-left: 20px;
+  font-family: var(--font-family-sub-headings);
+  font-weight: bold;
+  color: var(--text-color-1);
+  text-transform: capitalize;
+  margin: 0;
+}
+
+/* Hover Effect */
+
+.program-info:hover {
+  background-color: rgba(var(--button-background-rgb), 0.2);
+  transition: 0.3s ease;
+}
+/*admsiom-form-*/
+#admission-form-section {
+  background-color: var(--main-background-color);
+  padding: 70px 20px;
+}
+
+.form-section-head {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.form-header-title {
+  color: var(--button-background-color);
+  font-family: var(--font-family-headings);
+  font-size: 1.2rem;
+}
+
+.form-section-head h2 {
+  color: var(--text-color-1);
+  font-family: var(--font-family-headings);
+  font-size: 2.4rem;
+  margin: 10px 0;
+}
+
+.admismis-form-text {
+  color: var(--text-color-1);
+  font-size: 1rem;
+}
+
+/* Container */
+
+.admiss-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Form */
+
+#admission-form {
+  background-color: var(--secondary-background-color);
+  color: var(--text-color-2);
+
+  padding: 35px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 15px 35px rgba(var(--secondary-background-rgb), 0.25);
+}
+
+fieldset {
+  border: 1px solid rgba(var(--button-background-rgb), 0.5);
+
+  border-radius: 15px;
+
+  padding: 25px;
+
+  margin-bottom: 25px;
+}
+
+legend {
+  color: var(--button-background-color);
+
+  font-family: var(--font-family-headings);
+
+  font-size: 1.2rem;
+
+  font-weight: bold;
+
+  padding: 0 10px;
+}
+
+/* Rows */
+
 .form-row {
   display: flex;
-  gap: 1.2rem;
+
+  gap: 20px;
+
   flex-wrap: wrap;
-  margin-bottom: 1.1rem;
 }
 
 .form-group {
-  flex: 1 1 220px;
+  flex: 1 1 350px;
   display: flex;
+  padding-right: 20px;
   flex-direction: column;
+
+  margin-bottom: 15px;
 }
 
 .form-group.full {
-  flex-basis: 100%;
+  width: 90%;
 }
 
+/* Labels */
+
 label {
+  font-family: var(--font-family-sub-headings);
+
   font-weight: 600;
-  margin-bottom: 0.4rem;
+
+  margin-bottom: 8px;
 }
+
+/* Inputs */
 
 input,
 select,
 textarea {
-  font-family: Arial, sans-serif;
-  padding: 0.8rem 0.9rem;
+  width: 100%;
+
+  padding: 12px 15px;
+
   border-radius: 10px;
-  border: 1px solid rgba(15, 42, 74, 0.2);
-  background: #ffffff;
-  font-size: 0.9rem;
+
+  border: none;
+
+  outline: none;
+
+  background-color: var(--text-color-2);
+
+  color: var(--text-color-1);
+
+  font-family: var(--font-family-paragraphs);
+
+  font-size: 15px;
 }
 
 input:focus,
 select:focus,
 textarea:focus {
-  outline: none;
-  border-color: #c89b3c;
-  box-shadow: 0 0 0 hsla(38, 55%, 55%, 0.15);
+  outline: 3px solid var(--button-background-color);
 }
 
-textarea {
-  resize: vertical;
-  min-height: 110px;
+/* File Upload */
+
+input[type="file"] {
+  background-color: white;
+
+  padding: 10px;
 }
+
+/* Textarea */
+
+textarea {
+  min-height: 120px;
+
+  resize: vertical;
+}
+
+/* Radio */
 
 .radio-group {
   display: flex;
-  align-items: center;
-  gap: 1.4rem;
+
+  gap: 25px;
 }
 
 .radio-group label {
   display: flex;
+
   align-items: center;
-  gap: 0.4rem;
-  font-weight: 500;
+
+  gap: 8px;
 }
+
+/* Checkbox */
 
 .checkbox-row {
   display: flex;
+
   align-items: flex-start;
-  gap: 0.6rem;
-  margin-bottom: 1.4rem;
+
+  gap: 10px;
+
+  margin-bottom: 20px;
 }
 
-.checkbox-row label {
-  font-weight: 400;
-  color: var(--text-color-2);
-  font-size: 0.88rem;
+.checkbox-row input {
+  width: auto;
+
+  margin-top: 5px;
 }
+
+.checkbox-row p {
+  font-size: 0.9rem;
+}
+
+/* Button */
 
 #admission-form button {
   width: 100%;
-  padding: 1rem;
-  background-color: var(--button-background-color);
-  color: var(--secondary-background-color);
-  font-weight: 700;
+
+  padding: 15px;
+
   border: none;
-  border-radius: 999px;
+
+  border-radius: 50px;
+
+  background-color: var(--button-background-color);
+
+  color: var(--text-color-1);
+
+  font-family: var(--font-family-sub-headings);
+
+  font-weight: bold;
+
   font-size: 1rem;
   cursor: pointer;
-  transition: transform 0.25s ease;
+  transition: 0.3s;
 }
 
 #admission-form button:hover {
-  transform: translateY(-5px);
   background-color: var(--text-color-2);
+
+  transform: translateY(-3px);
 }
 
 /*qeybtan Academics*/
-
 
 .academic-container {
   padding: 50px 40px;
@@ -1135,7 +1175,7 @@ textarea {
   padding: 25px 0;
 
   margin-bottom: 10px;
-  color:var(--main-background-color);
+  color: var(--main-background-color);
   font-size: 60px;
   font-family: var(--font-family-headings);
 }
@@ -1169,7 +1209,7 @@ textarea {
 }
 
 .feculty-container {
-  display:grid;
+  display: grid;
   grid-template-columns: repeat(3, 2fr);
   justify-content: center;
   gap: 20px;
@@ -1180,7 +1220,7 @@ textarea {
 }
 
 .fecult-card {
- display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
 
@@ -1194,7 +1234,7 @@ textarea {
     transform 0.3s ease,
     box-shadow 0.3s ease,
     background-color 0.3s ease;
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .fecult-card img {
@@ -1215,7 +1255,6 @@ textarea {
 }
 
 .card-body {
-  
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -1233,7 +1272,7 @@ textarea {
 }
 
 .feculty-container ul li {
-  color:var(--footer-background-color);
+  color: var(--footer-background-color);
   font-size: 16px;
   padding: 6px 0;
   line-height: 1.3;
@@ -1241,7 +1280,7 @@ textarea {
   list-style-type: none;
 }
 
-.link-learn  {
+.link-learn {
   margin-top: auto;
   padding: 12px 30px;
   border-radius: 12px;
@@ -1254,8 +1293,7 @@ textarea {
   transition:
     background-color 0.3s ease,
     color 0.3s ease;
-    text-decoration: none;
-
+  text-decoration: none;
 }
 
 .card-body a:hover {
@@ -1283,10 +1321,10 @@ textarea {
   font-family: var(--font-family-sub-headings);
   font-size: 1rem;
   max-width: 800px;
-  margin: 20px auto ;
+  margin: 20px auto;
   line-height: 1.5;
   padding: 0 20px;
- 
+
   letter-spacing: 0.5px;
 }
 
@@ -1308,7 +1346,9 @@ textarea {
   overflow: hidden;
   background-color: white;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .program-card:hover {
@@ -1361,7 +1401,7 @@ textarea {
 
 .program-btn {
   background-color: var(--button-background-color);
-  color:var(--footer-background-color);
+  color: var(--footer-background-color);
   border: none;
   padding: 10px 16px;
   margin: 0 15px 20px 15px;
@@ -1380,7 +1420,7 @@ textarea {
 }
 /* departments */
 .title-of-fuculty {
-text-align: center;
+  text-align: center;
   padding: 30px 29px;
   background: linear-gradient(to left, #102753, #2b364c);
   color: #fff9f0;
@@ -1615,12 +1655,10 @@ text-align: center;
   opacity: 0.5;
 }
 
-
 /* deparment of engineering */
-.header-civil{
-
+.header-civil {
   text-align: center;
- 
+
   padding: 30px 28px;
   background: linear-gradient(to left, #102753, #2b364c);
   color: #fff9f0;
@@ -1628,70 +1666,67 @@ text-align: center;
   font-size: 2.1rem;
   font-weight: bold;
 }
-.sub-civil{
- text-align: center;
+.sub-civil {
+  text-align: center;
   font-weight: bold;
   font-size: 1.8rem;
   font-family: "Poppins", sans-serif;
   /* margin-top: 40px; */
   color: #253657;
-
 }
-.civil-conatiner{
+.civil-conatiner {
   display: flex;
   gap: 20px;
   justify-content: space-between;
   align-items: stretch;
 }
-.img-civil{
+.img-civil {
   width: 450px;
   height: 350px;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0px 2px 6px #ffb627;
   border: none;
-  margin:25px
+  margin: 25px;
 }
-.civil-p{
- font-family: "Inter", sans-serif;
+.civil-p {
+  font-family: "Inter", sans-serif;
   font-size: 1.1rem;
   color: rgb(42, 40, 40);
   margin-top: 50px;
   line-height: 1.6;
   letter-spacing: 1px;
 }
-.civil-learn-cont{
+.civil-learn-cont {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(4, 1fr);
   margin: 30px;
   width: 60%;
   margin: 0 auto;
-  
 }
-.item-civil{
+.item-civil {
   background-color: var(--secondary-background-color);
   padding: 30px 19px;
   text-align: center;
   margin-top: 15px;
-  color:var(--button-background-color);
+  color: var(--button-background-color);
   border-radius: 14px;
   font-size: 1.2rem;
-font-family: var(--text-sub-heading);
+  font-family: var(--text-sub-heading);
 }
 
 /* deparment of  machinacal engineerin */
 
-.sub-machanical{
- text-align: center;
+.sub-machanical {
+  text-align: center;
   font-weight: bold;
   font-size: 1.8rem;
   font-family: "Poppins", sans-serif;
   margin-top: 40px;
   color: #253657;
-
 }
-  
+
 .machnical-container {
   display: flex;
   align-items: center;
@@ -1706,11 +1741,11 @@ font-family: var(--text-sub-heading);
   border-radius: 10px;
   box-shadow: 0px 2px 6px #ffb627;
   border: none;
-  margin:25px
+  margin: 25px;
 }
 
 .mechanical-p {
- font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1.1rem;
   color: rgb(42, 40, 40);
   margin-top: 50px;
@@ -1719,7 +1754,7 @@ font-family: var(--text-sub-heading);
   margin-left: 20px;
 }
 
-.machanical-learn-cont{
+.machanical-learn-cont {
   display: grid;
   gap: 55px;
   grid-template-columns: repeat(4, 1fr);
@@ -1727,23 +1762,21 @@ font-family: var(--text-sub-heading);
   width: 70%;
   margin: 0 auto;
   margin-bottom: 30px;
-  
 }
-.item-machanical{
+.item-machanical {
   background-color: var(--footer-background-color);
   padding: 30px 19px;
   text-align: center;
   margin-top: 15px;
-  color:var(--button-background-color);
+  color: var(--button-background-color);
   border-radius: 14px;
   font-size: 1.2rem;
-font-family: var(--text-sub-heading);
+  font-family: var(--text-sub-heading);
 }
-
 
 /* deparment of electical enginering */
 
-.sub-electrical{
+.sub-electrical {
   text-align: center;
 
   margin-top: 50px;
@@ -1751,25 +1784,24 @@ font-family: var(--text-sub-heading);
   font-size: 2.4rem;
   font-family: var(--text-sub-heading);
   color: var(--text-color-1);
-
 }
 
-.electrical-container{
+.electrical-container {
   display: flex;
   gap: 20px;
   justify-content: space-between;
   align-items: center;
 }
-.img-electrical{
+.img-electrical {
   width: 470px;
   height: 360px;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0px 2px 6px #ffb627;
   border: none;
-  margin:25px
+  margin: 25px;
 }
-.electrical-p{
+.electrical-p {
   font-family: "Inter", sans-serif;
   font-size: 1.2rem;
   color: rgb(42, 40, 40);
@@ -1779,7 +1811,7 @@ font-family: var(--text-sub-heading);
   margin-left: 20px;
 }
 
-.electrical-learn-cont{
+.electrical-learn-cont {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(4, 1fr);
@@ -1787,9 +1819,8 @@ font-family: var(--text-sub-heading);
   width: 60%;
   margin: 0 auto;
   margin-bottom: 30px;
-  
 }
-.item-elecrical{
+.item-elecrical {
   background-color: #1f3a6e;
   padding: 30px 19px;
   text-align: center;
@@ -1797,12 +1828,8 @@ font-family: var(--text-sub-heading);
   color: #ffb627;
   border-radius: 14px;
   font-size: 1.2rem;
-font-family: var(--text-sub-heading);
-
+  font-family: var(--text-sub-heading);
 }
-
-
-
 
 /* Faculty of Business & Management */
 .name-fuculty {
@@ -1813,7 +1840,6 @@ font-family: var(--text-sub-heading);
   font-family: "Cinzel", serif;
   font-size: 2.1rem;
   font-weight: bold;
- 
 }
 .department-name {
   text-align: center;
@@ -1838,7 +1864,7 @@ font-family: var(--text-sub-heading);
   box-shadow: 0px 2px 6px #142850;
   border: none;
 }
-.describtion-department{
+.describtion-department {
   font-family: "Inter", sans-serif;
   font-size: 1.1rem;
   color: rgb(42, 40, 40);
@@ -1980,117 +2006,115 @@ td {
 /*qeybtan admisions*/
 
 /*qeybtan contacts*/
-.contact{
-    width:90%;
-    max-width:1200px;
-    margin:60px auto;
+.contact {
+  width: 90%;
+  max-width: 1200px;
+  margin: 60px auto;
 }
 
-.contact h2{
-    text-align:center;
-    color:var(--text-color-1);
-    margin-bottom:40px;
-    font-family:var(--font-family-headings);
+.contact h2 {
+  text-align: center;
+  color: var(--text-color-1);
+  margin-bottom: 40px;
+  font-family: var(--font-family-headings);
 }
 
-.contact-container{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    gap:40px;
-    flex-wrap:wrap;
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
-.contact-item{
-    flex:1;
-    min-width:320px;
+.contact-item {
+  flex: 1;
+  min-width: 320px;
 }
 
-.email-phone-address{
-    margin:10px 0;
-    color:var(--text-color-1);
-    font-size:17px;
+.email-phone-address {
+  margin: 10px 0;
+  color: var(--text-color-1);
+  font-size: 17px;
 }
 
-.contact-text-complaint{
-    margin:20px 0;
-    line-height:1.7;
-    color:#444;
+.contact-text-complaint {
+  margin: 20px 0;
+  line-height: 1.7;
+  color: #444;
 }
 
-.message{
-    margin:20px 0;
-    color:var(--text-color-1);
+.message {
+  margin: 20px 0;
+  color: var(--text-color-1);
 }
 
-.name-email-subject{
-    display:block;
-    margin-top:15px;
-    margin-bottom:5px;
-    color:var(--text-color-1);
-    font-weight:bold;
+.name-email-subject {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: var(--text-color-1);
+  font-weight: bold;
 }
 
 input,
-textarea{
-    width:100%;
-    padding:12px;
-    border:1px solid #ccc;
-    border-radius:8px;
-    margin-bottom:15px;
-    font-size:15px;
-    outline:none;
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 15px;
+  outline: none;
 }
 
-textarea{
-    height:140px;
-    resize:none;
-  
+textarea {
+  height: 140px;
+  resize: none;
 }
 
 input:focus,
-textarea:focus{
-    border-color:var(--secondary-background-color);
+textarea:focus {
+  border-color: var(--secondary-background-color);
 }
 
-button{
-    padding:12px 35px;
-    background:var(--button-background-color);
-    color:#000;
-    border:none;
-    border-radius:8px;
-    cursor:pointer;
-    font-size:16px;
-    font-weight:bold;
-    transition:.3s;
+button {
+  padding: 12px 35px;
+  background: var(--button-background-color);
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
-button:hover{
-    background:var(--secondary-background-color);
-    color:white;
+button:hover {
+  background: var(--secondary-background-color);
+  color: white;
 }
 
-.contact-item img{
-    width:100%;
-    max-width:550px;
-    height:450px;
-    object-fit:cover;
-    border-radius:20px;
-    box-shadow:0 10px 25px rgba(0,0,0,.2);
-    display:block;
-    margin:auto;
+.contact-item img {
+  width: 100%;
+  max-width: 550px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin: auto;
 }
 
-@media(max-width:768px){
-    .contact-container{
-        flex-direction:column;
-    }
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
 
-    .contact{
-        width:95%;
-    }
+  .contact {
+    width: 95%;
+  }
 }
 
 /* qeybta footrs*/
 /* >>>>>>> d5551b3672a6dc3d96e8e1a0e64b809b76b67458 */
- 

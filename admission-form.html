@@ -1,175 +1,284 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>admission form</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-                  <header id="site-header">
-    <div class="container nav-wrap">
-      <img src="loogo1.jpeg" class="logo">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="site-header">
+      <div class="container nav-wrap">
+        <img src="loogo1.jpeg" class="logo" />
         <h2 class="logo-name">Bright Future University</h2>
 
-      <nav id="main-nav">
-        <ul class="ul">
-          <li><a href="index.html" id="anchor2">Home</a></li>
-          <li><a href="about.html" id="anchor2">About us</a></li>
-          <li><a href="Academics.html" id="anchor2">Academics</a></li>
-          <li><a href="Admissions.html" id="anchor2">Admission</a></li>
-          <li><a href="Contact.html" id="anchor2">Contact us</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-    <!-- ========== ADMISSION FORM ========== -->
-    <section id="admission-form-section">
-        <div class="section-head">
-            <h1 class="eyebrow">Application Form</h1>
-            <h2>Apply for Admission</h2>
-            <p class="admis-form-desc">Fill out the form below — our admissions team will contact you within 3–5 days.</p>
-        </div>
-        <div class="admiss-container">
-          
-    
-            <form id="admission-form" class="admission-form" action="#" method="post">
-    
-                <fieldset>
-                    <legend>Personal Information</legend>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="full-name">Full Name</label>
-                            <input type="text" id="full-name" name="full-name" placeholder="e.g. Isse Abdi Hassan" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="dob">Date of Birth</label>
-                            <input type="date" id="dob" name="dob" required>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label>Gender</label>
-                            <div class="radio-group">
-                                <label><input type="radio" name="gender" value="male" checked> Male</label>
-                                <label><input type="radio" name="gender" value="female"> Female</label>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="nationality">Nationality</label>
-                            <input type="text" id="nationality" name="nationality" placeholder="Somali" value="Somali">
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" placeholder="+252 61 xxx xxxx" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" placeholder="example@email.com" required>
-                        </div>
-                    </div>
-                    <div class="form-group full">
-                        <label for="address">Home Address</label>
-                        <input type="text" id="address" name="address" placeholder="District, Neighborhood">
-                    </div>
-                </fieldset>
-    
-                <fieldset>
-                    <legend>Academic Information</legend>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="program">Preferred Program</label>
-                            <select id="program" name="program">
-                                <option>Computer Science</option>
-                                <option>Business & Management</option>
-                                <option>Health Sciences</option>
-                                <option>Engineering</option>
-    
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="prev-school">Previous School</label>
-                            <input type="text" id="prev-school" name="prev-school" placeholder="School name">
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="grad-year">Graduation Year</label>
-                            <input type="number" id="grad-year" name="grad-year" min="2000" max="2026" placeholder="2025">
-                        </div>
-                        <div class="form-group">
-                            <label for="average">Grade Average (%)</label>
-                            <input type="number" id="average" name="average" min="0" max="100" placeholder="e.g. 85">
-                        </div>
-                    </div>
-                    <div class="form-group full">
-                        <label for="certificate">Upload Certificate (PDF/Image)</label>
-                        <input type="file" id="certificate" name="certificate" accept=".pdf,.jpg,.png">
-                    </div>
-                </fieldset>
-    
-                <fieldset>
-                    <legend>Additional Information</legend>
-                    <div class="form-group full">
-                        <label for="statement">Why do you want to study this program?</label>
-                        <textarea id="statement" name="statement" placeholder="Write a short statement..."></textarea>
-                    </div>
-                </fieldset>
-                <!-- axpapi checkebox style keda wan fahmi wayay qofki iga fcn ha qurrxiyo -->
-    
-                <div class="checkbox-row">
-                    <input type="checkbox" id="agree" name="agree" required>
-                    <p>I confirm that the information above is accurate, and I agree to the Terms & Conditions of Bright
-                        future University.</p>
-    
-                </div>
-    
-                <button type="submit">Submit Application</button>
-            </form>
-        </div>
-    </section>
-    <footer id="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-         <img src="loogo1.jpeg" class="logo">
-        <div class="footer-description"> 
-          <h2 class="logo-name1">Bright Future University</h2>
-          <p class="description">Building the leaders and thinkers of tomorrow through modern, accessible education.</p>
-        </div>
-        <div>
-          <h4 class="head4">Pages</h4>
+        <nav id="main-nav">
           <ul class="ul">
-            <li><a href="index (2).html" id="anchor2">Home</a></li>
+            <li><a href="index.html" id="anchor2">Home</a></li>
             <li><a href="about.html" id="anchor2">About us</a></li>
             <li><a href="Academics.html" id="anchor2">Academics</a></li>
             <li><a href="Admissions.html" id="anchor2">Admission</a></li>
             <li><a href="Contact.html" id="anchor2">Contact us</a></li>
           </ul>
-        </div>
-        <div>
-          <h4 class="head4">Academics</h4>
-          <ul class="ul">
-            <li><a href="Academics.html" class="anchor" id="anchor2">Undergraduate Programs</a></li>
-            <li><a href="Academics.html" class="anchor" id="anchor2">Faculties</a></li>
-            <li><a href="Admissions.html" class="anchor" id="anchor2">Apply Now</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="head4">Contact</h4>
-          <ul class="ul">
-            <li>Mogadishu, Somalia</li>
-            <li>+252 61 xxx xxxx</li>
-            <li>info@brightfuture.edu</li>
-          </ul>
-        </div>
+        </nav>
       </div>
-      <p class="footer-bottom">&copy; 2026 Bright Future University. All rights reserved.</p>
-    </div>
-  </footer>
-    
-  
+    </header>
+    <!-- ========== ADMISSION FORM ========== -->
+    <section id="admission-form-section">
+      <div class="form-section-head">
+        <h1 class="form-header-title">Application Form</h1>
+        <h2>Apply for Admission</h2>
 
-</body>
+        <p class="admismis-form-text">
+          Fill out the form below — our admissions team will contact you within
+          3–5 days.
+        </p>
+      </div>
+
+      <div class="admiss-container">
+        <form
+          id="admission-form"
+          class="admission-form"
+          action="#"
+          method="post"
+        >
+          <fieldset>
+            <legend>Personal Information</legend>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="full-name">Full Name</label>
+                <input
+                  type="text"
+                  id="full-name"
+                  name="full-name"
+                  placeholder="e.g. Isse Abdi Hassan"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label>Gender</label>
+
+                <div class="radio-group">
+                  <label>
+                    <input type="radio" name="gender" value="male" checked />
+                    Male
+                  </label>
+
+                  <label>
+                    <input type="radio" name="gender" value="female" />
+                    Female
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="nationality">Nationality</label>
+
+                <input
+                  type="text"
+                  id="nationality"
+                  name="nationality"
+                  value="Somali"
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="+252 61 xxx xxxx"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address</label>
+
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="example@email.com"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group full">
+              <label for="address">Home Address</label>
+
+              <input
+                type="text"
+                id="address"
+                name="address"
+                placeholder="District, Neighborhood"
+              />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Academic Information</legend>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="program"> Preferred Program </label>
+
+                <select id="program" name="program">
+                  <option>Computer Science</option>
+                  <option>Business & Management</option>
+                  <option>Health Sciences</option>
+                  <option>Engineering</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="prev-school"> Previous School </label>
+
+                <input
+                  type="text"
+                  id="prev-school"
+                  name="prev-school"
+                  placeholder="School name"
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="grad-year"> Graduation Year </label>
+
+                <input
+                  type="number"
+                  id="grad-year"
+                  name="grad-year"
+                  placeholder="2025"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="average"> Grade Average (%) </label>
+
+                <input
+                  type="number"
+                  id="average"
+                  name="average"
+                  min="0"
+                  max="100"
+                  placeholder="e.g. 85"
+                />
+              </div>
+            </div>
+
+            <div class="form-group full">
+              <label for="certificate"> Upload Certificate (PDF/Image) </label>
+
+              <input
+                type="file"
+                id="certificate"
+                name="certificate"
+                accept=".pdf,.jpg,.png"
+              />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Additional Information</legend>
+
+            <div class="form-group full">
+              <label for="statement">
+                Why do you want to study this program?
+              </label>
+
+              <textarea
+                id="statement"
+                name="statement"
+                placeholder="Write a short statement..."
+              >
+              </textarea>
+            </div>
+          </fieldset>
+
+          <div class="checkbox-row">
+            <input type="checkbox" id="agree" name="agree" required />
+
+            <p>
+              I confirm that the information above is accurate, and I agree to
+              the Terms & Conditions of Bright Future University.
+            </p>
+          </div>
+
+          <button type="submit">Submit Application</button>
+        </form>
+      </div>
+    </section>
+    <footer id="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <img src="loogo1.jpeg" class="logo" />
+          <div class="footer-description">
+            <h2 class="logo-name1">Bright Future University</h2>
+            <p class="description">
+              Building the leaders and thinkers of tomorrow through modern,
+              accessible education.
+            </p>
+          </div>
+          <div>
+            <h4 class="head4">Pages</h4>
+            <ul class="ul">
+              <li><a href="index (2).html" id="anchor2">Home</a></li>
+              <li><a href="about.html" id="anchor2">About us</a></li>
+              <li><a href="Academics.html" id="anchor2">Academics</a></li>
+              <li><a href="Admissions.html" id="anchor2">Admission</a></li>
+              <li><a href="Contact.html" id="anchor2">Contact us</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="head4">Academics</h4>
+            <ul class="ul">
+              <li>
+                <a href="Academics.html" class="anchor" id="anchor2"
+                  >Undergraduate Programs</a
+                >
+              </li>
+              <li>
+                <a href="Academics.html" class="anchor" id="anchor2"
+                  >Faculties</a
+                >
+              </li>
+              <li>
+                <a href="Admissions.html" class="anchor" id="anchor2"
+                  >Apply Now</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="head4">Contact</h4>
+            <ul class="ul">
+              <li>Mogadishu, Somalia</li>
+              <li>+252 61 xxx xxxx</li>
+              <li>info@brightfuture.edu</li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer-bottom">
+          &copy; 2026 Bright Future University. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
