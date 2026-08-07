@@ -662,6 +662,7 @@ background-color: var(--secondary-background-color);
   margin-bottom: 20px;
   margin-left: 20px;
   text-align: center;
+  padding:60px;
   
 }
 .about-links-card {
@@ -671,7 +672,7 @@ background-color: var(--secondary-background-color);
   overflow: hidden;
 background-color: var(--main-background-color);
 box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.1);
-  padding: 30px;
+  padding: 20px;
  
   border-radius: 10px;
   color: var(--text-color-1);
@@ -685,6 +686,7 @@ box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.1);
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
+ 
 }
 a:hover {
   color: var(--button-background-color);
