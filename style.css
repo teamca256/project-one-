@@ -1980,6 +1980,116 @@ td {
 /*qeybtan admisions*/
 
 /*qeybtan contacts*/
+.contact{
+    width:90%;
+    max-width:1200px;
+    margin:60px auto;
+}
+
+.contact h2{
+    text-align:center;
+    color:var(--text-color-1);
+    margin-bottom:40px;
+    font-family:var(--font-family-headings);
+}
+
+.contact-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.contact-item{
+    flex:1;
+    min-width:320px;
+}
+
+.email-phone-address{
+    margin:10px 0;
+    color:var(--text-color-1);
+    font-size:17px;
+}
+
+.contact-text-complaint{
+    margin:20px 0;
+    line-height:1.7;
+    color:#444;
+}
+
+.message{
+    margin:20px 0;
+    color:var(--text-color-1);
+}
+
+.name-email-subject{
+    display:block;
+    margin-top:15px;
+    margin-bottom:5px;
+    color:var(--text-color-1);
+    font-weight:bold;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    margin-bottom:15px;
+    font-size:15px;
+    outline:none;
+}
+
+textarea{
+    height:140px;
+    resize:none;
+  
+}
+
+input:focus,
+textarea:focus{
+    border-color:var(--secondary-background-color);
+}
+
+button{
+    padding:12px 35px;
+    background:var(--button-background-color);
+    color:#000;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+button:hover{
+    background:var(--secondary-background-color);
+    color:white;
+}
+
+.contact-item img{
+    width:100%;
+    max-width:550px;
+    height:450px;
+    object-fit:cover;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+    display:block;
+    margin:auto;
+}
+
+@media(max-width:768px){
+    .contact-container{
+        flex-direction:column;
+    }
+
+    .contact{
+        width:95%;
+    }
+}
 
 /* qeybta footrs*/
 /* >>>>>>> d5551b3672a6dc3d96e8e1a0e64b809b76b67458 */
