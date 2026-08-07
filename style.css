@@ -1659,7 +1659,9 @@ textarea {
 
 /* deparment of engineering */
 .header-civil{
+
   text-align: center;
+  margin-top: 100px;
   padding: 45px 35px;
   background: linear-gradient(to left, #102753, #2b364c);
   color: #fff9f0;
@@ -1739,8 +1741,8 @@ font-family: var(--text-sub-heading);
 }
 
 .img-machanical {
-  width: 550px;
-  height: 450px;
+  width: 450px;
+  height: 350px;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0px 2px 6px #ffb627;
@@ -1797,11 +1799,11 @@ font-family: var(--text-sub-heading);
   display: flex;
   gap: 20px;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: center;
 }
 .img-electrical{
-  width: 550px;
-  height: 450px;
+  width: 470px;
+  height: 360px;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0px 2px 6px #ffb627;
@@ -1810,11 +1812,12 @@ font-family: var(--text-sub-heading);
 }
 .electrical-p{
   font-family: "Inter", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: rgb(42, 40, 40);
   margin-top: 50px;
-  line-height: 1.6;
+  line-height: 1.4;
   letter-spacing: 1px;
+  margin-left: 20px;
 }
 
 .electrical-learn-cont{
