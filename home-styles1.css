@@ -1,0 +1,330 @@
+:root {
+  --main-background-color: #fff9f0;
+  --secondary-background-color: hwb(219 12% 57%);
+  --button-background-color: #ffb627;
+  --text-color-1: #1f3a6e;
+  --text-color-2: #ffffff;
+  --footer-background-color: #142850;
+  --font-family-headings: "Cinzel", serif;
+  --font-family-sub-headings: "Poppins", sans-serif;
+  --font-family-paragraphs: "Inter", sans-serif;
+  --secondary-background-rgb: rgb(31, 58, 110);
+  --button-background-rgb: rgb(255, 182, 39);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family-paragraphs);
+  background: var(--main-background-color);
+  color: var(--text-color-1);
+  line-height: 1.6;
+}
+.head1,
+.head2,
+.head3
+ {
+  font-family: var(--font-family-headings);
+  color: var(--text-color-1);
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.ul {
+  list-style: none;
+}
+
+#site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background:rgba(255, 182, 39, 0.6);
+  backdrop-filter: blur(50px);
+  border-bottom: 1px solid hsla(38, 100%, 58%, 0.14);
+}
+
+.nav-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.1rem 0;
+  
+
+}
+
+.logo-name {
+  font-family: var(--font-family-headings);
+  color: var(--text-color-1);
+  margin-left: -18rem;
+}
+
+
+.logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+#main-nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+#main-nav a {
+  position: relative;
+  font-weight: 500;
+  padding: .3rem 0;
+}
+
+#main-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: var(--secondary-background-color);
+  transition: width .25s ease;
+}
+
+#main-nav a:hover::after,
+#main-nav a.active::after {
+  width: 100%;
+}
+
+  /* ---------- Hero (index) — university campus photo background ---------- */
+  #hero-section {
+    margin-top: 7rem;
+    background: linear-gradient(150deg, rgba(20, 40, 80, .88), rgba(31, 58, 110, .82)),
+    url(logo.jpeg);
+    background-size: cover;
+    background-position: center;
+    color: var(--text-color-2);
+    position: relative;
+    overflow: hidden;
+    background-attachment: fixed;
+  }
+  
+
+  #hero-section .container {
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    align-items: center;
+    gap: 3rem;
+    padding-block: 5rem;
+  }
+
+  #hero-section h1 {
+    color: var(--text-color-2);
+    font-size: clamp(2.3rem, 4.2vw, 3.4rem);
+  }
+
+  #hero-section h1 em {
+    color: var(--button-background-color);
+    font-style: normal;
+  }
+
+  #hero-section p {
+    color: var(--text-color-2);
+    margin: 1.2rem 0 2rem;
+    max-width: 46ch;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  /* ---------- Buttons ---------- */
+.btn {
+  display: inline-block;
+  padding: .9rem 1.9rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: .95rem;
+  border: 2px solid transparent;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--button-background-color));
+  color: var(--text-color-1);
+  box-shadow: 0 12px 24px rgba(255, 182, 39, .35);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 30px rgba(255, 182, 39, .45);
+}
+
+.btn-ghost {
+  border-color: var(--box-model-background-color);
+  color: var(--box-model-background-color);
+}
+
+.btn-ghost:hover {
+  background: var(--box-model-background-color);
+  color: var(--text-color-1);
+}
+
+
+
+#anchor2 {
+  text-decoration: none;
+  color: inherit;
+}
+
+ /* ---------- Facts strip ---------- */
+  .facts-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+    background: var(--box-model-background-color);
+    border-radius: 22px;
+    box-shadow: 0 20px 40px rgba(20, 40, 80, 0.14);
+    padding: 2rem;
+  }
+
+  .fact-information {
+    text-align: center;
+    flex: 1 1 140px;
+  }
+
+  .facts-numbers {
+    display: block;
+    font-family: var(--font-family-sub-headings);
+    font-size: 1.8rem;
+    color: var(--text-color-1);
+  }
+.facts-letters {
+    color: var(--text-color-1);
+    font-size: .85rem;
+  }
+
+/* ---------- Grids & cards ---------- */
+  .eyebrow {
+  font-size: 1rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color:var(--text-color-1);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.desccription{
+   margin-bottom: 20px;
+}
+
+  .three-col-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.8rem;
+  }
+
+  .two-col-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.8rem;
+  }
+
+  .card {
+    background: var(--box-model-background-color);
+    border-radius: 12px;
+    padding: 2rem 1.6rem;
+    box-shadow: 0 8px 20px rgba(20, 40, 80, 0.08);
+    border: 1px solid rgba(20, 40, 80, .05);
+    transition: transform .25s ease, box-shadow .25s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(20, 40, 80, 0.14);
+  }
+
+  .icon-badge {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: hsla(38, 100%, 58%, 0.14);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .form-panel button:hover {
+    transform: translateY(-2px);
+  }
+
+
+
+.container {
+  width: min(1120px, 92%);
+  margin-inline: auto;
+}
+
+section {
+  padding: 5rem 0;
+}
+
+
+
+
+  /* ---------- Footer ---------- */
+  #site-footer {
+    background: var(--footer-background-color);
+    color: var(--text-color-2);
+    padding: 3.4rem 0 1.6rem;
+  }
+.footer-description{
+  margin-left: -10rem;}
+.description{
+  margin-top: 30px;
+} 
+  
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr 1.4fr;
+    gap: 2rem;
+    padding-bottom: 2.4rem;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+  }
+
+
+  .footer-grid h4 {
+    color: var(--box-model-background-color);
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  .description{
+    margin-bottom: 30px;
+
+  
+  }
+
+  .footer-grid ul li {
+    margin-bottom: .6rem;
+  }
+  
+  .footer-grid ul li a:hover {
+    color: var(--button-background-color);
+  }
+
+  .footer-bottom {
+    text-align: center;
+    padding-top: 1.4rem;
+    font-size: .85rem;
+    color: var(--text-color-2);
+  }
