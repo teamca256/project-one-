@@ -41,7 +41,7 @@ body {
 .brand{
   font-family: var(--font-family-headings);
   color: var(--text-color-1);
-  margin-left: -15rem;
+  /* margin-left: -15rem; */
 }
 
 
