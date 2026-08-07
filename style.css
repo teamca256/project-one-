@@ -1114,6 +1114,7 @@ textarea {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+  margin-top: 6rem;
 }
 
 .academic-container img {
@@ -1162,22 +1163,23 @@ textarea {
 }
 
 .feculty-container {
-  display: flex;
+  display:grid;
+  grid-template-columns: repeat(3, 2fr);
   justify-content: center;
-  align-items: stretch;
-  text-align: center;
-  gap: 70px;
+  gap: 20px;
   margin-top: 40px;
-  padding: 0 40px;
-  flex-wrap: wrap;
+  margin: auto;
+  /* padding: 40px 30px;
+  flex-wrap: wrap; */
 }
 
 .fecult-card {
-  display: flex;
-  text-align: center;
+ display: flex;
   flex-direction: column;
+  justify-content: center;
+
   width: 340px;
-  height: auto;
+  /* height: auto; */
   border-radius: 12px;
   overflow: hidden;
   background-color: var(--main-background-color);
@@ -1186,6 +1188,7 @@ textarea {
     transform 0.3s ease,
     box-shadow 0.3s ease,
     background-color 0.3s ease;
+    margin: 0 auto;
 }
 
 .fecult-card img {
@@ -1257,7 +1260,7 @@ textarea {
 /* Our Academic Programs */
 .our-acdmy-container {
   text-align: center;
-  margin-top: 90px;
+  margin-top: -5rem;
   margin-bottom: 60px;
 }
 
@@ -1285,8 +1288,8 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 100px;
-  padding: 0 40px;
+  gap: 30px;
+  padding: 40px 30px;
   flex-wrap: wrap;
 }
 
@@ -1371,13 +1374,14 @@ textarea {
 }
 /* departments */
 .title-of-fuculty {
-  text-align: center;
-  font-weight: bold;
-  font-size: 2.3rem;
-  font-family: "Cinzel", serif;
-  background: linear-gradient(to right, #1f3a6e, #ffb627);
-  padding: 40px;
+text-align: center;
+  padding: 30px 29px;
+  background: linear-gradient(to left, #102753, #2b364c);
   color: #fff9f0;
+  font-family: "Cinzel", serif;
+  font-size: 2.1rem;
+  font-weight: bold;
+  margin-top: 2rem;
 }
 .name-of-department-technology {
   text-align: center;
@@ -1560,21 +1564,21 @@ textarea {
   color: aliceblue;
 }
 .apply-now {
-  background:
+  /* background:
     linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
     url("https://i.pinimg.com/1200x/37/ab/6a/37ab6a8c9ba7184468fc9bd5ebb628a3.jpg");
 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 40px 30px;
+  padding: 10px 8px; */
   position: relative;
   margin-top: 40px;
 }
 .aplly-now-pragraph {
   font-family: "Inter", sans-serif;
   font-size: 1.1rem;
-  color: rgb(184, 178, 178);
+  color: black;
   line-height: 1.6;
 
   letter-spacing: 1px;
@@ -1610,12 +1614,12 @@ textarea {
 .header-civil{
 
   text-align: center;
-  margin-top: 100px;
-  padding: 45px 35px;
+ 
+  padding: 30px 28px;
   background: linear-gradient(to left, #102753, #2b364c);
   color: #fff9f0;
   font-family: "Cinzel", serif;
-  font-size: 2.7rem;
+  font-size: 2.1rem;
   font-weight: bold;
 }
 .sub-civil{
@@ -1623,7 +1627,7 @@ textarea {
   font-weight: bold;
   font-size: 1.8rem;
   font-family: "Poppins", sans-serif;
-  margin-top: 40px;
+  /* margin-top: 40px; */
   color: #253657;
 
 }
@@ -1797,12 +1801,13 @@ font-family: var(--text-sub-heading);
 /* Faculty of Business & Management */
 .name-fuculty {
   text-align: center;
-  padding: 45px 35px;
+  padding: 30px 29px;
   background: linear-gradient(to left, #102753, #2b364c);
   color: #fff9f0;
   font-family: "Cinzel", serif;
-  font-size: 2.7rem;
+  font-size: 2.1rem;
   font-weight: bold;
+ 
 }
 .department-name {
   text-align: center;
