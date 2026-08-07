@@ -346,22 +346,19 @@ section {
 /* <<<<<<< HEAD */
 
 /* =======qeybta about us ================*/
-.about-us {
+#about-us {
   margin: 20px auto;
   width: 100%;
 }
 
 .about-title {
-  background: linear-gradient(
-    90deg,
-    rgba(var(--secondary-background-rgb), 0.9),
-    rgba(var(--button-background-rgb), 0.8)
-  );
+  background: var(--secondary-background-color);
   width: 100%;
-  height: 60px;
+  height: 100px;
   text-align: center;
   color: var(--text-color-2);
-  padding: 10px;
+ padding: 30px;
+  margin: auto;
   font-family: var(--font-family-headings);
 }
 
@@ -521,17 +518,13 @@ section {
 }
 
 .membership-title {
-  background: linear-gradient(
-    90deg,
-    var(--secondary-background-color),
-    var(--button-background-color)
-  );
-
+  background: var(--secondary-background-color);
   width: 100%;
-  height: 60px;
+  height: 100px;
   text-align: center;
-  color: var(--text-color-1);
-  padding: 20px;
+  color: var(--text-color-2);
+  padding: 30px;
+  margin: auto;
   font-family: var(--font-family-headings);
 }
 
@@ -613,19 +606,14 @@ hr {
 }
 /*qeybta sStrategic Goals*/
 .title-stratagetic {
-  background: linear-gradient(
-    90deg,
-    var(--secondary-background-color),
-    var(--button-background-color)
-  );
-
+ background: var(--secondary-background-color);
   width: 100%;
-  height: 60px;
+  height: 100px;
   text-align: center;
-  color: var(--text-color-1);
-  padding: 20px;
+  color: var(--text-color-2);
+  padding: 30px;
+  margin: auto;
   font-family: var(--font-family-headings);
-  font-weight: bold;
 }
 .stratagetic-goals-content {
   margin: 20px 10px;
@@ -667,6 +655,42 @@ background-color: var(--secondary-background-color);
   font-size: 1.2rem;
   color: var(--text-color-2);
  
+}
+.about--links{
+  display: grid;
+  grid-template-columns: repeat(3,3fr);
+  gap: 20px;
+  margin-top: 200px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  text-align: center;
+  
+}
+.about-links-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  overflow: hidden;
+background-color: var(--main-background-color);
+box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+ 
+  border-radius: 10px;
+  color: var(--text-color-1);
+  width: 300px;
+  height: 100px;
+}
+.about--links a {
+  text-decoration: none;
+  color: var(--text-color-1);
+  font-family: var(--font-family-sub-headings);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+a:hover {
+  color: var(--button-background-color);
+  transition: 0.3s ease;
 }
 /* styleka qeybta admissionka waaye filesha ka horeyan kan stlekoda kor kunqora kuwa kadambeyana hootisa kuqora */
 
@@ -1586,7 +1610,9 @@ textarea {
 
 /* deparment of engineering */
 .header-civil{
+
   text-align: center;
+  margin-top: 100px;
   padding: 45px 35px;
   background: linear-gradient(to left, #102753, #2b364c);
   color: #fff9f0;
@@ -1666,8 +1692,8 @@ font-family: var(--text-sub-heading);
 }
 
 .img-machanical {
-  width: 550px;
-  height: 450px;
+  width: 450px;
+  height: 350px;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0px 2px 6px #ffb627;
@@ -1724,11 +1750,11 @@ font-family: var(--text-sub-heading);
   display: flex;
   gap: 20px;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: center;
 }
 .img-electrical{
-  width: 550px;
-  height: 450px;
+  width: 470px;
+  height: 360px;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0px 2px 6px #ffb627;
@@ -1737,11 +1763,12 @@ font-family: var(--text-sub-heading);
 }
 .electrical-p{
   font-family: "Inter", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: rgb(42, 40, 40);
   margin-top: 50px;
-  line-height: 1.6;
+  line-height: 1.4;
   letter-spacing: 1px;
+  margin-left: 20px;
 }
 
 .electrical-learn-cont{
