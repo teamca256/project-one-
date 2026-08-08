@@ -71,7 +71,8 @@ body {
 .logo-name {
   font-family: var(--font-family-headings);
   color: var(--text-color-1);
-  margin-left: -18rem;
+  margin-left: -15rem;
+  padding: 20px;
 }
 
 .logo {
@@ -79,6 +80,7 @@ body {
   height: 80px;
   border-radius: 50%;
   object-fit: cover;
+  margin-left: 14px;
 }
 
 #main-nav ul {
@@ -227,6 +229,7 @@ body {
   font-weight: bold;
   margin-top: 40px;
   padding: 60px;
+  margin-top: 20px;
 }
 
 .desccription {
@@ -280,8 +283,14 @@ body {
 .container {
   width: min(1120px, 92%);
   margin-inline: auto;
+  padding: 20px;
 }
+.container-borow{
+  width: min(1120px, 92%);
+  margin-bottom: 40px;
+  margin-inline: auto;
 
+}
 section {
   padding: 5rem 0;
 }
@@ -1306,6 +1315,7 @@ textarea {
   border: none;
   font-size: 1.1rem;
   font-weight: bold;
+  text-align: center;
   cursor: pointer;
   transition:
     background-color 0.3s ease,
