@@ -383,6 +383,8 @@ section {
   font-size: 1.1rem;
   font-family: var(--font-family-paragraphs);
   text-align: left;
+  line-height: 1.8;
+  letter-spacing: 1.5px;
 }
 
 .about-container {
@@ -420,13 +422,15 @@ section {
   padding: 20px;
   border-radius: 10px;
   color: var(--text-color-2);
-
+line-height: 1.8;
+  letter-spacing: 1.5px;
   width: 300px;
-  height: 370px;
+  height: 399px;
 }
 
 .mision-list {
   list-style-type: square;
+  
 }
 
 .core-valus-list {
@@ -508,7 +512,8 @@ section {
   text-align: left;
   width: 100%;
   max-width: 800px;
-
+line-height: 1.8;
+  letter-spacing: 1.5px;
   margin-top: 30px;
   display: flex;
 }
@@ -555,8 +560,11 @@ section {
 .text-paragphg-global {
   font-family: var(--font-family-paragraphs);
   width: 600px;
-  height: 20px;
+  height: 60px;
   margin: 20px 20px;
+  line-height: 1.8;
+  letter-spacing: 1.5px;
+  
 }
 .hr {
   background-color: var(--button-background-color);
@@ -614,6 +622,8 @@ section {
   margin: 20px 10px;
   font-size: 1.2rem;
   font-family: var(--font-family-paragraphs);
+  line-height: 1.8;
+  letter-spacing: 1.5px;
   text-align: left;
 }
 .stratagetic-continer {
@@ -649,6 +659,8 @@ section {
   font-family: var(--font-family-paragraphs);
   font-size: 1.2rem;
   color: var(--text-color-2);
+  line-height: 1.8;
+  letter-spacing: 1.5px;
 }
 .about--links {
   display: grid;
