@@ -2237,3 +2237,696 @@ button:hover {
 
 /* qeybta footrs*/
 /* >>>>>>> d5551b3672a6dc3d96e8e1a0e64b809b76b67458 */
+
+/* =====================================================
+   RESPONSIVE DESIGN - TABLET & MOBILE
+   ===================================================== */
+
+/* ---------- TABLET ---------- */
+@media (max-width: 992px) {
+
+  .container {
+    width: 94%;
+    padding: 15px;
+  }
+
+  /* Header */
+  .nav-wrap {
+    padding: 0.8rem 0;
+  }
+
+  .logo {
+    width: 65px;
+    height: 65px;
+  }
+
+  .logo-name {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  #main-nav ul {
+    gap: 1rem;
+  }
+
+  /* Hero */
+  #hero-section .container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  #hero-section p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  /* Grids */
+  .three-col-grid,
+  .two-col-grid,
+  .about-facts,
+  .nationl-m,
+  .stratagetic-continer,
+  .container222,
+  .feculty-container,
+  .What-We-Teach-container,
+  .What-We-Teach-containers,
+  .What-Students-Learn--container,
+  .What-Students-Learn-containers,
+  .Student-Learn-containers {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* About */
+  .about-container {
+    width: 95%;
+  }
+
+  .about-vision,
+  .about-mision,
+  .Core-Values {
+    width: 280px;
+  }
+
+  .about-image {
+    float: none;
+    display: block;
+    max-width: 100%;
+  }
+
+  /* Membership */
+  .text-paragphy-membership {
+    display: block;
+    max-width: 100%;
+  }
+
+  .membership-image {
+    float: none;
+    display: block;
+    margin: 20px auto;
+  }
+
+  .text-paragphg-global {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Profiles */
+  .profile {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 20px;
+  }
+
+  /* Departments */
+  .fc-information-tech-container,
+  .civil-conatiner,
+  .machnical-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-of-departmen-technology,
+  .img-civil,
+  .img-machanical {
+    width: 90%;
+    max-width: 450px;
+    height: auto;
+    margin: 20px auto;
+  }
+
+  .What-We-Teach-container,
+  .What-We-Teach-containers,
+  .What-Students-Learn-containers,
+  .Student-Learn-containers {
+    width: 90%;
+  }
+
+  .civil-learn-cont,
+  .machanical-learn-cont {
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Academic */
+  .academic-container {
+    padding: 40px 25px;
+  }
+
+  .head-text {
+    font-size: 45px;
+  }
+
+  .program-grid {
+    padding: 30px 15px;
+  }
+
+  .program-card {
+    width: 45%;
+  }
+
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-description {
+    margin-left: 0;
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  section {
+    padding: 3rem 0;
+  }
+
+  .container {
+    width: 94%;
+    padding: 10px;
+  }
+
+  /* ---------- HEADER ---------- */
+
+  #site-header {
+    position: relative;
+  }
+
+  .nav-wrap {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .logo {
+    width: 60px;
+    height: 60px;
+    margin-left: 0;
+  }
+
+  .logo-name {
+    margin-left: 0;
+    padding: 5px;
+  }
+
+  #main-nav ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  #main-nav a {
+    padding: 5px;
+  }
+
+
+  /* ---------- HERO ---------- */
+
+  #hero-section {
+    margin-top: 0;
+    background-attachment: scroll;
+  }
+
+  #hero-section .container {
+    grid-template-columns: 1fr;
+    padding-block: 3rem;
+    gap: 1.5rem;
+  }
+
+  #hero-section h1 {
+    font-size: 2.1rem;
+  }
+
+  #hero-section p {
+    font-size: 0.95rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 90%;
+    text-align: center;
+  }
+
+
+  /* ---------- GRIDS ---------- */
+
+  .three-col-grid,
+  .two-col-grid,
+  .about-facts,
+  .nationl-m,
+  .stratagetic-continer,
+  .container222,
+  .feculty-container,
+  .What-We-Teach-container,
+  .What-We-Teach-containers,
+  .What-Students-Learn-containers,
+  .Student-Learn-containers {
+    grid-template-columns: 1fr;
+  }
+
+
+  /* ---------- ABOUT ---------- */
+
+  .about-title,
+  .membership-title,
+  .title-stratagetic {
+    height: auto;
+    padding: 25px 15px;
+    font-size: 1.5rem;
+  }
+
+  .sub-title {
+    font-size: 1.25rem;
+    padding: 10px;
+  }
+
+  .about-container {
+    width: 95%;
+    padding: 10px;
+    margin-top: 30px;
+  }
+
+  .about-vision,
+  .about-mision,
+  .Core-Values {
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+  }
+
+  .text-paragphy {
+    margin: 0 10px;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+  }
+
+  .about-image {
+    width: 100%;
+    float: none;
+  }
+
+
+  /* ---------- FACTS ---------- */
+
+  .fact-card {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .fact-info h3 {
+    font-size: 1.6rem;
+  }
+
+
+  /* ---------- MEMBERSHIP ---------- */
+
+  .text-paragphy-membership {
+    margin: 0 10px;
+    width: auto;
+    max-width: 100%;
+    display: block;
+    font-size: 1rem;
+  }
+
+  .membership-image {
+    float: none;
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 20px auto;
+  }
+
+  .text-paragphg-global {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  .sub-title-national {
+    font-size: 1.8rem;
+    padding: 25px 10px;
+  }
+
+  .membership-card {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+
+  /* ---------- STRATEGIC GOALS ---------- */
+
+  .stratagetic-goals-content {
+    font-size: 1rem;
+    margin: 15px;
+    letter-spacing: 0.5px;
+  }
+
+  .card-stratagetic {
+    margin: 5px;
+    padding: 20px;
+  }
+
+  .card-title-stratagetic {
+    font-size: 1.2rem;
+  }
+
+  .stratagetic-goals-paragraph {
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+  }
+
+
+  /* ---------- ABOUT LINKS ---------- */
+
+  .about--links {
+    grid-template-columns: 1fr;
+    margin: 50px 10px 20px;
+    padding: 20px 10px;
+  }
+
+  .about-links-card {
+    width: 100%;
+  }
+
+
+  /* ---------- PROFILES ---------- */
+
+  .profile {
+    width: 100%;
+    max-width: 380px;
+  }
+
+  .profile img {
+    width: 160px;
+    height: 160px;
+  }
+
+
+  /* ---------- ADMISSION ---------- */
+
+  .admision-hero {
+    padding: 80px 15px;
+    background-attachment: scroll;
+  }
+
+  .admision-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .adimision-pharaphy {
+    font-size: 1rem;
+  }
+
+  .requirements {
+    padding: 50px 15px;
+  }
+
+  .requirement-container {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .title-admis-on {
+    margin-top: 50px;
+  }
+
+  .faculties-fees {
+    overflow-x: auto;
+  }
+
+  .faculties-table {
+    width: 700px;
+    min-width: 700px;
+  }
+
+  #admission-form-section {
+    padding: 50px 15px;
+  }
+
+  #admission-form {
+    padding: 20px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .form-group {
+    flex: 1 1 100%;
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .form-group.full {
+    width: 100%;
+  }
+
+
+  /* ---------- ACADEMICS ---------- */
+
+  .academic-container {
+    margin-top: 0;
+    padding: 50px 20px;
+    background-attachment: scroll;
+  }
+
+  .head-text {
+    font-size: 2.3rem;
+    text-align: center;
+  }
+
+  .text-container h2 {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .text-feculty {
+    font-size: 1.6rem;
+  }
+
+  .text-p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .fecult-card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .acdmy-heading {
+    font-size: 2rem;
+  }
+
+  .our-acdmy-container {
+    margin-top: 0;
+  }
+
+  .program-grid {
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+
+  .program-card {
+    width: 100%;
+    max-width: 370px;
+  }
+
+
+  /* ---------- DEPARTMENTS ---------- */
+
+  .title-of-fuculty,
+  .header-civil {
+    font-size: 1.6rem;
+    padding: 20px 15px;
+  }
+
+  .name-of-department-technology,
+  .sub-civil,
+  .sub-machanical,
+  .sub-electrical {
+    font-size: 1.4rem;
+  }
+
+  .fc-information-tech-container,
+  .civil-conatiner,
+  .machnical-container {
+    flex-direction: column;
+    gap: 10px;
+    margin: 15px;
+  }
+
+  .image-of-departmen-technology,
+  .img-civil,
+  .img-machanical {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 15px 0;
+  }
+
+  .explore-of-departmen-technology,
+  .civil-p,
+  .mechanical-p,
+  .Our-Mission-pragrph,
+  .Our-Vision-pragrph {
+    font-size: 1rem;
+    margin: 20px 10px;
+    letter-spacing: 0.5px;
+  }
+
+  .civil-learn-cont,
+  .machanical-learn-cont {
+    width: 95%;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .What-We-Teach-container,
+  .What-We-Teach-containers,
+  .What-Students-Learn-containers,
+  .Student-Learn-containers {
+    width: 95%;
+    grid-template-columns: 1fr;
+  }
+
+
+  /* ---------- CONTACT ---------- */
+
+  .contact {
+    width: 95%;
+    margin: 40px auto;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .contact-item {
+    min-width: 100%;
+  }
+
+  .contact-item img {
+    height: auto;
+    max-height: 350px;
+  }
+
+
+  /* ---------- FOOTER ---------- */
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .footer-description {
+    margin-left: 0;
+  }
+
+  .footer-bottom {
+    font-size: 0.8rem;
+  }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+   ===================================================== */
+
+@media (max-width: 480px) {
+
+  .container {
+    width: 96%;
+    padding: 8px;
+  }
+
+  #hero-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .head-text {
+    font-size: 1.9rem;
+  }
+
+  .about-title,
+  .membership-title,
+  .title-stratagetic {
+    font-size: 1.3rem;
+  }
+
+  .fact-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .fact-icon {
+    width: 65px;
+    height: 65px;
+  }
+
+  .fact-info h3 {
+    font-size: 1.4rem;
+  }
+
+  .profile {
+    padding: 15px;
+  }
+
+  .profile img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .admision-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .form-section-head h2 {
+    font-size: 1.8rem;
+  }
+
+  #admission-form {
+    padding: 15px;
+    border-radius: 12px;
+  }
+
+  fieldset {
+    padding: 15px;
+  }
+
+  .program-card {
+    width: 100%;
+  }
+
+  .title-of-fuculty,
+  .header-civil {
+    font-size: 1.3rem;
+  }
+
+  button,
+  .admission-btn,
+  .admission-button {
+    width: 100%;
+  }
+
+}
